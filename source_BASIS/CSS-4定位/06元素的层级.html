@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 50px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+            position: absolute;
+
+            z-index: 1;
+            /* 对应开启了定位的元素，可以通过z-index来指定元素的层级 */
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: rgba(171, 207, 39, 0.89);     
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            z-index: 2;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: rgba(66, 49, 28, 1);
+
+            position: absolute;
+            /* 3盖2 */
+            top: 200px;
+            left: 200px;
+            z-index: 3;
+        }
+        .box4{
+            width: 100px;
+            height: 100px;
+            background-color: slateblue;
+            position: absolute;
+            /* z-index: 2; */
+        }
+        
+    </style>
+</head>
+<body>
+    <diV class="box1">1</diV>
+    <div class="box2">2</div>
+    <div class="box3">3
+        <diV class="box4">4</diV>
+    </div>
+</body>
+</html>

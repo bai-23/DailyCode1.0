@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            border: 10px rebeccapurple solid;
+
+            /* overflow: hidden;  开启BFC */
+
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: antiquewhite;
+            float: left;
+        }
+
+        /* .box3{
+            clear: both;
+        } */
+        /* box3作用：借html标签解决塌陷，无实际作用 */
+
+        .box1::after{
+            content: '';
+            display: block;
+            clear: both;
+            /*  */
+        }
+    </style>
+</head>
+<body>
+    <diV class="box1">
+        <diV class="box2"></diV>
+        <diV class="box3">
+            
+        </diV>
+    </diV>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: aqua;
+        }
+        /* 交集选择器：     
+                作用：选中同时符合多个条件的元素。
+                语法：选择器1选择器2选择器3...{}
+                注意：交集中如果有元素选择器，必须以元素选择器开头
+        */
+        div.red{
+            color: #000;
+            font-size: 30px;
+        }
+
+        /* 选择器分组（并集选择器）：
+                作用：同时选中多个选择器对应的元素。
+                语法：选择器1，选择器2，。。。{}
+         */
+        h1, span, .op{
+            color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">我是谁</div>
+    <p class="red">我是P</p>
+    <h1>标题</h1>
+    <span>成</span>
+    <p class="op">ass</p>
+</body>
+</html>

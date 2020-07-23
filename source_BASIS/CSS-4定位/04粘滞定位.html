@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS-2布局/CSS-reset/reset.css">
+    <style>
+    .ull{
+            width: 731px;
+            height: 48px;
+            background-color: darkgray;
+            float: left;
+
+            position: sticky;
+            left: 300px;
+        }
+        .ull li{
+            float: left;
+            line-height: 48px;/* 将文字在父元素中垂直居中 */
+
+            
+        }
+        .ull a{
+            /* 将a元素转换成块元素 */
+            display: block;
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+            height: 100%;
+
+            padding: 0 30px;
+        }
+        .ull a:hover{
+            background-color: cornsilk;
+            color: rgb(201, 204, 47);
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="ull">
+        <li><a href="#">HTML/CSS</a></li>
+        <li><a href="#">Browser Side</a></li>
+        <li><a href="#">Server Side</a></li>
+        <li><a href="#">Programming</a></li>
+    </ul>
+</body>
+</html>

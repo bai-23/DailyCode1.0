@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            长度单位：
+                像素：
+                    -屏幕是由一个个小点构成
+                    -不同屏幕的像素大小不同，像素越小的屏幕显示越清楚
+                    -所以同样的200px在不同显示器效果不一样
+                百分比：
+                    -可以将属性设置为相对于父元素属性的百分比
+                    -例：50%=100px
+                    -设置百分比可以跟随父元素的改变而改变
+                em:
+                    -是相对于元素的字体大小来计算的
+                    -1em = 1font-size
+                    -会根据字体大小改变而改变
+                rem：
+                    -相对于跟元素的字体大小计算
+                RGB:
+                    -在CSS中可以直接用颜色名来设置
+                    -RGB值：
+                        -通过红、绿、蓝的不同浓度调配出的颜色
+                        -值范围：0~255（0%~100%）
+                        -语法：rgb(1, 1, 1)
+                RGBA:
+                    -半透明效果
+                    -1表示完全不透明，0表示完全透明
+                十六进制的RGB值：
+                    -语法：#红色绿色蓝色
+                    -颜色范围：00~ff
+                    -两位重复可简写：#ffff00 → #ff0
+                HSL、HSLA值
+                    -H色相（0~360），S饱和度（0%~100%），L亮度（0%~100%）
+        */  
+        .box1{
+            
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+            background: salmon;
+        }
+        .box2{
+            width: 50%;
+            height: 50%;
+            background-color: aquamarine;
+        }
+        .box3{
+            font-size: 10px;/*一个字就是10像素*/
+            width: 10em;/*相对于10X10=100px*/
+            height: 10em;
+            /* background-color: rgb(2, 2, 56); */
+            background-color: rgba(2, 5, 7, .5);
+        }
+        .box4{
+            width: 10rem;
+            height: 10rem;
+            background-color: blue;
+        }
+        html{
+            font-size: 20px;
+        }
+        .box5{
+            width: 200px;
+            height: 100px;
+            background-color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <diV class="box1">
+        <diV class="box2"></diV>
+    </diV>
+    <diV class="box3"></diV>
+    <diV class="box4"></diV>
+    <diV class="box5"></diV>
+</body>
+</html>

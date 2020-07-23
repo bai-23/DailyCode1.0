@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{color: aqua;}
+        /* 给所有P标签设置样式 */
+    </style>
+</head>
+<body>
+    一、在标签内部通过style属性来设置元素的样式（内联样式，行内样式）
+    <p style="color:rgba(224, 108, 12, 0.541); font-size: 30px;">我自横刀向天笑，笑完我就去睡觉</p>
+        <!-- 缺点：只能对一个标签影响 -->
+        注意：开发时绝对不要用内联样式！
+        <br>
+    
+    二、将样式编写到head中的style标签里
+        - 通过CSS选择器来选中元素，可同时为多个标签设置样式。
+        <!-- 缺点：只能对一个网页起作用，不能跨页面使用 -->
+        <br>
+
+    三、外部样式表
+        - 可将CSS样式编写到一个外部的文件,
+        - 通过link标签引入外部CSS文件.
+        - 将样式编写到外部CSS文件中，可以使用到浏览器的缓存机制
+            从而加快网页的加载速度，提高用户的体验。
+        <link rel="stylesheet" href="./_01.css">
+        <a>狗</a>
+        <br>
+    
+
+    <!-- 
+        网页三部分：
+            结构（HTML）
+            表现（CSS）
+            行为（JS）
+        CSS：
+            - 层叠样式表
+            - 网页实际上是多层结构，通过CSS分别为网页的每一层设置样式
+                而最终看到的只是网页的最上层
+
+    -->
+</body>
+</html>

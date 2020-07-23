@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            font-size: 50px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+            float: left;
+        }
+        .box2{
+            width: 400px;
+            height: 400px;
+            background-color: rgb(128, 81, 24);
+            float: right;
+        }
+
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+
+            /* 由于box1浮动，导致box3位置上移
+                也就是box3受到了box1影响
+            
+                clear清除浮动元素对当前元素所产生的的影响
+             */
+
+             clear: right;
+        }
+    </style>
+</head>
+<body>
+    <diV class="box1">1</diV>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</body>
+</html>

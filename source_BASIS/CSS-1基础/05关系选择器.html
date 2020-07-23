@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            为div子元素span设置字体颜色（直接包含）
+            子元素选择器：选中指定父元素的指定子元素
+                    语法：父元素 > 子元素{}
+         */
+         diV.id > span{
+             color: blue;
+         }
+
+         /* 
+            后代元素选择器：选中指定元素内的指定后代元素
+                    语法：祖先 后代
+          */
+          div.ll span{
+              color: brown;
+          }
+
+          /* 
+            选择下一个兄弟：
+                    语法：前一个 + 下一个
+            选择下面所有的兄弟：
+                    语法：前一个 ~ 下一坨
+           */
+           p+span{
+               color: chartreuse;
+           }
+           p~span{
+               color: aqua;
+           }
+    </style>
+</head>
+<body>
+    <!-- 
+        父元素：直接包含子元素的元素叫父元素
+        子元素：直接被父元素包含的子元素
+        祖先元素：爷爷等，直接或间接包含后代的元素
+                一个元素的父元素也是祖先元素
+        后代元素：直接或间接被祖先元素包含的元素
+        兄弟元素：拥有相同父元素的元素
+     -->
+    <div class="id">
+        我是谁diV
+        <p>
+            diV 中的p元素
+            <span>p里的span元素</span>
+        </p>
+        <span> span in diV</span>
+
+    </div>
+    <div class="ll">
+        <p>
+            <span>sasa</span>
+        </p>
+        <span>
+            我是第二个div的span
+        </span>
+    </div>
+
+    <div class="lp">
+        <p>
+            <span>sasa</span>
+        </p>
+        <span>
+            我是第二个div的span
+        </span>
+    </div>
+</body>
+</html>

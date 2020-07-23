@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 600px;
+            height: 600px;
+            background-color: rgb(95, 68, 35);    
+            position: relative;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: rgba(38, 98, 209, 0.904);
+
+            position: absolute;
+            /* 水平布局
+                    left + margin-left + border-left + padding-left + width + padding-right + border-right + margin-right + right
+                        = 包含块的内容区的宽度
+                    当开启绝对定位后，水平方向的布局需要添加left 与 right两个值，其他规则一样
+                垂直布局
+             */
+             right: 0;
+             top: 0;
+             left: 0;
+             bottom: 0;
+             margin: auto;
+
+        }
+    </style>
+</head>
+<body>
+    <diV class="box1">
+        <diV class="box2"></diV>
+    </diV>
+</body>
+</html>

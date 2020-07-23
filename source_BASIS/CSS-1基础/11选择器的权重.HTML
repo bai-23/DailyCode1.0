@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            color: chartreuse;
+        }
+        div#box1{
+            color: darkgoldenrod;
+        }
+        .red{
+            color: black;
+        }
+        div,p,span{
+            color: blue !important;
+        }
+        /* 样式冲突：通过不同的选择器，选中相同的元素，
+                    并为相同的样式设置相同的值。
+            发生样式冲突是，应用哪个样式由选择器权重决定。
+            
+            选择器的权重       (优先级)
+                内联样式        1,0,0,0
+                id选择器        0,1,0,0
+                类和伪类选择器   0,0,1,0
+                元素选择器       0,0.0,1
+                通配选择器(*)    0,0,0,0
+                继承的样式       无优先级
+            注：
+            比较优先级时，需要将所有选择器的优先级相加（分组选择器是单独计算的）
+            如果优先级相同，此时则优先使用靠下的样式
+            添加 ！importent 变成最优先级，在开发中慎用
+        */  
+    </style>
+</head>
+<body>
+    <div id="box1" class="red">
+        我是div
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+         1.元素选择器：根据标签名选择
+         2.id选择器：根据元素id属性值选中一个元素
+                语法：#id属性值{}
+         3.类（class）选择器：根据class属性选择
+                语法： .class属性值
+         4.通配选择器：选中页面中的所有元素
+                语法：*
+         */
+        p{
+            color:blue;
+        }
+        #pers{
+            color: rgb(82, 224, 39);
+        }
+        .blue{
+            color: chocolate;
+        }
+        .abc{
+            font-size: larger;
+        }
+        *{
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+    <p>我来自偶然</p>
+    <p id="pers">我来自偶然发生时发生</p>
+
+    class是一个标签属性，与id类似，但可以重复使用。 
+    一个元素可以指定多个class 
+    <p class="blue abc">舒服舒服</p>
+    <p class="blue">我来自偶然</p>
+</body>
+</html>

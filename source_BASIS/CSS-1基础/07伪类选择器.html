@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 目标：自动选择第一个li元素 */
+        /* 伪类：不存在的类，特殊的类
+                -用来描述一个元素的特殊状态
+                -比如：第一个子元素、被点击的元素、鼠标移入的元素
+                -特点：一般使用：开头
+                    :first-child 第一个子元素
+                    :last-child
+                    :nth-child() 选任意位置（n）元素
+                        特殊值：0<n<无穷
+                                n：全选
+                                2n：选择偶数元素，或even
+                                odd：选择奇数位，同2n+1
+                以上伪类都是根据所有子元素进行排序。
+            以下三个伪类功能同上类似，不同点是他们是在同类型元素中进行排序
+            比如：在兄弟姐妹中，男孩的老大
+            :first-of-type
+            :last-of-type
+            :nth-of-type()
+
+            :not()  否定伪类
+                将符合条件的元素从选择器中去除
+
+                 */
+        ul>li.yi:first-child{
+            color: aquamarine;
+        }
+        ul>li:last-child{
+            color: aquamarine;
+        }
+        ul>li:nth-child(2){
+            color: rgb(160, 32, 53);
+        }
+        ul>li:not(:nth-child(1)){
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 直接输入“ ul>li " -->
+    <ul>
+        <li class="yi">一</li>
+        <li>二</li>
+        <li>三</li>
+        <li>四</li>
+        <li>无</li>
+    </ul>
+    <ul>
+        <li></li>
+    </ul>
+</body>
+</html>
