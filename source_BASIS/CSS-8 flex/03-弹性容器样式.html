@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    ul{
+        width: 600px;
+        height: 800px;
+        border: 10px solid red;
+        /* 设置ul为弹性容器 */
+        display: flex;
+
+        flex-direction: row;    
+
+        flex-wrap: wrap;
+
+        flex-flow: row wrap;
+
+        /* align-items: ; */
+    }
+    li{
+        width: 200px;
+        
+        background-color: rgb(74, 197, 156);
+        font-size: 50px;
+        text-align: center;
+        line-height: 100px;
+
+        flex-shrink: 0;
+    }
+    /* li:nth-child(1){
+
+    } */
+    li:nth-child(2){
+        background-color: bisque;
+
+    }
+    li:nth-child(3){
+        background-color: brown;
+    }
+
+</style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2
+            <div>2</div>
+        </li>
+        <li>3
+            <div>3</div>
+            <div>4</div>
+        </li>
+    </ul>
+</body>
+</html>

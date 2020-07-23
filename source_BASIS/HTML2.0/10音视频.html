@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    音视频引入时，默认不允许用户自己控制操作，需要加一个control属性(不用给值)。
+    以下都不需要参数：
+    control：控制
+    autoplay:打开页面时自动播放
+    loop:循环
+
+    soure也可以指定路径
+    <br>
+    <audio src="./转动 (1).mp3" controls></audio>
+    <audio controls>
+        <source src="./转动 (1).mp3">
+        <source src="">
+            优先使用第一个，不行则往下找
+        </audio>
+        
+    <!-- <embed src="./转动 (1).mp3" type="audio/mp3" control width="300"> -->
+
+    <!-- <VIdeo controls>
+        <source src="./免费的漂浮颗粒素材-Vidsplay.com.mp4" width="300" height="600">
+    </VIdeo> -->
+
+    
+
+
+</body>
+</html>

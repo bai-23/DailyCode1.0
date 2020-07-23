@@ -1,0 +1,24 @@
+.box1 {
+  background-color: #bfa;
+}
+.box1 .box3 {
+  background-color: #ff3;
+}
+.box2 {
+  width: 100px;
+  height: 100px;
+  color: #bfa;
+  background-color: #bfa;
+}
+.p1,
+.p2 {
+  width: 100px;
+  height: 100px;
+}
+.p2 {
+  color: #d39c53;
+}
+div {
+  width: 100px;
+  height: 100px;
+}

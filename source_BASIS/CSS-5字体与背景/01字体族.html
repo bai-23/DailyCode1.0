@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="font/css/all.css">
+    <style>
+        @font-face {
+            /* 指定字体名字（自己起名） */
+            font-family: 'myfont';
+            /* 服务器字体路径 */
+            src: url() format("truetype");
+        }
+        p{
+            color: rgb(72, 83, 173);/* 设置前景色（字体颜色） */
+            font-size: 40px;
+            /* font-family: '微软雅黑'; */
+            /* font-family: '华文彩云'; */
+            /* font-family: monospace; */
+            font-family: fantasy, cursive;
+        }
+        li{
+            list-style: none;
+        }
+        li::before{
+            content: '\f1b0';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p><span style="color: rgb(162, 228, 101);">今天</span>天气真好，how are you？</p>
+    
+    
+    <i class="fas fa-bell"></i>
+    <i class="fa fa-adjust"></i>
+    <i class="fa fa-ambulance"></i>
+    <i class="fas fa-bell"></i>
+    <li>sfdsfwsfwfg</li>
+</body>
+</html>

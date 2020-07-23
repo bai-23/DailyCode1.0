@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            height: 500px;
+            border-bottom: 10px black solid;
+            margin: 50px auto;
+            overflow: hidden;/* 开启bfa */
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-image: url(./QQ图片20200719142403.jpg);
+            background-position: 950px -130px;
+            background-color: rgb(216, 30, 30);
+            animation: tan 3s forwards ease-in;
+
+        }
+        @keyframes tan {
+            from{
+                margin-top: 0;
+            }
+            20%,60%,to{
+                margin-top: 300px;
+                animation-timing-function: ease-in;
+            }
+            40%{
+                margin-top: 100px;
+            }
+            80%{
+                margin-top: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="box1"></div>
+    </div>
+</body>
+</html>

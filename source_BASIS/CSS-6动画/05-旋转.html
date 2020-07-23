@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            perspective: 800px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            margin: 200px auto;
+            transition: 2s;
+            animation: box1s infinite 2s alternate;
+        }
+        .box1:hover{
+            /* transform: rotateX(45deg) rotateZ(45deg); */
+
+        }
+        @keyframes box1s{
+            from{
+                transform: rotateX(0deg) rotateZ(0deg);
+            }
+            to{
+                transform: rotateX(45deg) rotateZ(45deg) ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

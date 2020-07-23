@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            perspective: 800px;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+            transition: 1s;
+            margin: 100px auto;
+        }
+
+        .box1:hover{
+            transform: scaleX(2) scaleY(2);
+        }
+
+        .img-wrapper{
+            width: 200px;
+            height: 200px;
+            border: 1px solid rebeccapurple;    
+            transition: .3s;  
+            overflow: hidden;     
+        }
+        .img-wrapper:hover{
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+
+    <div class="img-wrapper">
+        <img src="./QQ图片20200719142403.jpg"  alt="">
+    </div>
+</body>
+</html>

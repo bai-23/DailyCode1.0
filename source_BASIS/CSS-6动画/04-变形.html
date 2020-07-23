@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            /* 设置当前网页视距为800px */
+            perspective: 800px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: rgba(0, 0, 0, .5);
+            margin: 0 auto;
+            margin-top: 200px;
+            /* transform: translateX(50px); */
+            transform: translateY(50px);
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(31, 126, 94);
+            margin: 0 auto;
+            transition: all .3s;
+        }
+        .box3{
+            background-color: rgb(46, 207, 154);
+            position: absolute;
+             left: 50%;
+             top: 50%;
+             transform: translateX(-50%) translateY(-50%);
+             transition: all .3s;
+        }
+        .box2:hover,
+        .box3:hover{
+            transform: translateZ(50px) translateY(-10px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3">hah</div>
+</body>
+</html>

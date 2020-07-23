@@ -1,0 +1,36 @@
+.box1{
+    background-color: #bfa;
+    .box2{
+        background-color: #ff0;
+    }
+    .box3{
+        background-color: #ff3;
+    }
+}
+
+@a:100px;
+@b:#bfa;
+
+.box2 {
+    // 调用
+    width: @a;
+    height: @a;
+    color: #bfa;
+    background-color: $color;
+}
+.p1{
+    width: 100px;
+    height: 100px;
+  }
+  .p2:extend(.p1){
+    color: rgb(211, 156, 83);
+  }
+
+.text(@w){
+    width: @w;
+    height: 100px;
+}
+div{
+    .text(100px)
+}
+

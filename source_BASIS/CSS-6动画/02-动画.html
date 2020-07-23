@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 500px;
+            height: 500px;
+            background-color: #bfa;
+            overflow: hidden;
+        }
+        .box1 div{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 100px;
+        }
+        .box2{
+            background-color: silver;
+            /* transition: 2s; */
+
+            animation-name: identifier;
+            animation-duration: 2s;
+            animation-iteration-count: 2;
+        }
+        .box1:hover div{
+            /* margin-left: 400px; */
+        }
+        .box3{
+            background-color: aqua;
+        }
+        @keyframes identifier {
+            from{
+                margin-left: 0;
+            }
+            to{
+                margin-left: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+        <!-- <div class="box3"></div> -->
+    </div>
+</body>
+</html>
