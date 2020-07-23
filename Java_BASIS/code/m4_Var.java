@@ -9,6 +9,7 @@ public class m4_Var {
         System.out.println("sll");//字符串，用双引号
         System.out.println('a');//字符，用单引号
         System.out.println("a");//字符串
+        m18_代码封装.p("我是封装");
         int i=1, s = 0;//局部变量,只在方法体中有效，main方法结束，内存空间释放。
         for(i = 1;i <= 10; i++){
             s *= i;
