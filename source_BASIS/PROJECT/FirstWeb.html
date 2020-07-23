@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="../CSS-2布局/CSS-reset/reset.css">
+    <style>
+        body{
+            background-color: rgb(233, 219, 27);
+            height: 1200px;
+        }
+        a img{
+            width: 250px;
+            height: 150px;
+            float: left;
+        }
+        .aftergun{
+            height: 500px;
+            width: 199px;
+            background-color: rgb(204, 204, 166);
+            top: 150px;
+            position: absolute; 
+            z-index: 1;
+        } 
+        .gun{
+            height: 498px;
+            width: 199px;
+            background-color: beige;
+            float: left;
+            position: fixed;
+            top: 150px;
+            border-top: 5px ridge coral;
+            z-index: 2;
+        }
+        .gun:hover{
+            background-color: antiquewhite;
+        }
+        .aftergun:hover{
+            background-color: rgb(172, 183, 185);
+        }
+
+        header{
+            height: 150px;
+            width: 100%;
+            background-color: darkgray;
+        }
+        .head{
+            width: 60px;
+            width: 1027px;
+            background-color: antiquewhite;
+            float: left;
+            position: absolute;
+            left: 250px;
+        }
+        .head li{
+            float: left;
+            line-height: 48px;
+            border-right: 1px black solid;
+        }
+        .head li:hover{
+            background-color: burlywood;
+            font-style: oblique;
+        }
+        .head a{
+            /* 将a元素转换成块元素 */
+            display: block;
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+            height: 100%;
+
+            padding: 0 30px;
+        }
+        
+        main{
+            width: 1703px;
+            height: 500px;
+            background-color: rgb(236, 247, 247);
+            margin-left: 200px;
+            /* margin-top: 10px; */
+            margin-bottom: 2px;
+            border-top: 2px solid black;
+        }
+        footer{
+            width: 100%;
+            height: 276px;
+            background-color: rgb(62, 65, 65);
+            
+        }
+        footer div{
+            width: 24.8%;
+            height: 276px;
+            background-color: slategrey;
+            float: left;
+            border: 1px solid black;
+            margin: 0px auto;
+        }
+        footer div:hover{
+            background-color: grey;
+        }
+        .bott{
+            width: 100%;
+            height: 276px;
+        }
+    </style>
+</head>
+<body>
+    <div class="gun"></div>
+    <diV class="aftergun">hai</diV>
+    <header>
+        <a href="./00my.html"><img src="./练习图片/wallhaven-lqq28l.jpg" alt="home"></a>
+        <ul class="head">
+            <li><a href="#">我的主页</a></li>
+            <li><a href="#">我的空间</a></li>
+            <li><a href="#">我的关注</a></li>
+            <li><a href="#">娱乐</a></li>
+            <li><a href="#">摄影</a></li>
+            <li><a href="#">我的点赞</a></li>
+            <li><a href="#">两只兔纸</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </header>
+
+    <main>
+        <diV class=""></diV>
+    </main>
+    
+    
+    <footer>
+        
+        <div class="f1"></div>
+        <div class="f2"></div>
+        <div class="f3"></div>
+        <div class="f4"></div>
+        <img src="./练习图片/wallhaven-nkj6dm.jpg" alt="2" class="bott">
+    </footer>
+</body>
+</html>

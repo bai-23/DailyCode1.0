@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS-2布局/CSS-reset/reset.css">
+    <style>
+        .box{
+            background-color: bisque;
+            float: left;
+            width: max-content;
+            height: 60px;
+        }
+        .box div:hover{
+            background-color: rgb(185, 190, 188);
+        }
+        .box1{
+            float: left;
+            background-color: bisque;
+            width: 125px;
+            height: 40px;
+            padding-top: 20px;
+            padding-left: 25px;
+        }
+        .box2{
+            float: left;
+            background-color: bisque; 
+            width: 125px;
+            height: 40px;
+            padding-top: 20px;
+            padding-left: 25px;
+        }
+        .box3{
+            float: left;
+            background-color: bisque; 
+            width: 125px;
+            height: 40px;
+            padding-top: 20px;
+            padding-left: 25px;
+        }
+        .box4{
+            float: left;
+            background-color: bisque; 
+            width: 125px;
+            height: 40px;
+            padding-top: 20px;
+            padding-left: 25px;
+        }
+        .box5{
+            float: left;
+            background-color: bisque; 
+            width: 110px;
+            height: 40px;
+            padding-top: 20px;
+            padding-left: 50px;
+        }
+
+        p{
+            float: left;
+        }
+
+        /* --------------------------方法二------------------------------ */
+        .ull{
+            width: 731px;
+            height: 48px;
+            background-color: darkgray;
+            float: left;
+        }
+        .ull li{
+            float: left;
+            line-height: 48px;/* 将文字在父元素中垂直居中 */
+
+            
+        }
+        .ull a{
+            /* 将a元素转换成块元素 */
+            display: block;
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+            height: 100%;
+
+            padding: 0 30px;
+        }
+        .ull a:hover{
+            background-color: cornsilk;
+            color: rgb(201, 204, 47);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">HTML/CSS</div>
+        <diV class="box2">Browser Side</diV>
+        <diV class="box3">Server Side</diV>
+        <diV class="box4">Programming</diV>
+        <diV class="box5">XML</diV>
+    </div>
+
+    <ul class="ull">
+        <li><a href="#">HTML/CSS</a></li>
+        <li><a href="#">Browser Side</a></li>
+        <li><a href="#">Server Side</a></li>
+        <li><a href="#">Programming</a></li>
+    </ul>
+
+</body>
+</html>

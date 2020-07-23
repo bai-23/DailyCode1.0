@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS-2布局/CSS-reset/reset.css">
+    <style>
+        .ull{
+            width: 450px;
+            height: 370px;
+            margin: auto;
+
+            position: relative;
+
+
+            /* overflow: hidden; */
+        }
+        .ull li{
+            position: absolute;
+        }
+        .pointer a{
+            /* display: block; */
+            width: 10px;
+            height: 10px;
+            background-color: rgba(55, 116, 95, 0.5);
+            background-clip: content-box;
+
+            float: left;/* 设置元素向左浮动 */
+
+            border-radius: 50%;
+            margin-left: 4px;
+            
+            
+
+        }
+        .pointer{
+            position: absolute;
+            z-index: 999;
+            bottom: 10px;
+            left: 20px;
+            border: 2px solid transparent;
+        }
+
+        /* 通过修改层级来显示指定图片 */
+        .ull li:nth-child(1){
+            z-index: 1;
+        }
+
+        diV a:hover{
+
+            border: 2px rgba(179, 69, 106, 0.3) solid;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="ull">
+        <li><a href="jaVascript:;"><img src="./练习图片/DSC_4543.jpg" alt="1" height="400px"></a></li>
+        <li><a href="jaVascript:;"><img src="./练习图片/DSC_4763.jpg" alt="1" height="400px"></a></li>
+        <li><a href="jaVascript:;"><img src="./练习图片/DSC_4770.jpg" alt="1" height="400px"></a></li>
+        <div class="pointer">
+            <a href="jaVascript:;" class="pp"></a>
+            <a href="jaVascript:;"></a>
+            <a href="jaVascript:;"></a>
+        </div>
+    </ul>
+</body>
+</html>

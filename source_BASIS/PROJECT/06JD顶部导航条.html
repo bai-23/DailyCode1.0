@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jd</title>
+    <!-- 引入重置样式表与图标字体 -->
+    <link rel="stylesheet" href="../CSS-2布局/CSS-reset/reset.css">
+    <link rel="stylesheet" href="../CSS-5字体与背景/fa/css/all.css">
+    <style>
+        /* 解决高度塌陷 */
+        .clearfix::before,
+        .clearfix::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+        body{
+            font:12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
+            /* color: rgb(9, 9, 9); */
+        }
+
+        .topin .heightlight{
+            color: red;
+        }
+        .topout{
+            width: 100%;
+            background-color: rgba(169, 169, 169, 0.5);
+            border-bottom: 1px #ddd solid;
+            height: 30px;
+            /* 设置行高，使文字垂直居中 */
+            line-height: 30px;
+        }
+
+         .topin{
+             width: 1190px;
+             /* 设置居中于外围容器 */
+             margin: 0 auto;
+            position: relative;
+
+         }  
+
+         .lo{
+             float: left;
+         }
+
+         .city{
+             padding: 0 10px;
+             border-bottom: none;
+         }
+
+         /* 城市列表 */
+         .lo .list{
+             display: none;
+             width: 320px;
+             height: 436px;
+             background-color: rgb(247, 244, 244);
+             border: 1px solid rgb(204, 204, 204);
+             /* 设置绝对定位，使其不占据页面位置 */
+             position: absolute;
+             box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+         }
+         .lo:hover .list{
+             display: block;
+         }
+         .lo:hover .city{
+             background-color: white;
+             border-bottom: none;
+         }
+
+         .righ{
+             float: right;
+         }
+         .righ li{
+             float: left;
+         }
+         .line{
+             width: 1px;
+             height: 10px;
+             background-color: rgba(155, 154, 154, 0.5);
+             margin: 10px ;
+
+         }
+
+         .topin a:hover,
+         .topin a.highlight{
+            color: red;
+         }
+         
+         /* 设置字体样式 */
+         .topin a,
+         .topin span,
+         .topin i{
+            color: #999;
+            text-decoration: none;
+         }
+    </style>
+</head>
+<body>
+    <!-- 创建外围容器 -->
+    <div class="topout">
+        <!-- 创建内部容器 -->
+        <diV class="topin clearfix">
+            <!-- 左侧菜单 -->
+            <diV class="lo">
+                <diV class="city">
+                    <i1 class="fa fa-map-marker-alt" style="color: red;"></i1>
+                    <a href="jaVascript:;">北京</a>
+                </diV>
+
+                <!-- 城市下拉框 -->
+                <diV class="list"></diV>
+            </diV>
+            <!-- 右侧菜单 -->
+            <ul class="righ">
+                <li>
+                    <a href="jaVascript:;">你好，请登录</a>
+                    <a href="jaVascript:;" class="heightlight">免费注册</a>
+                </li>
+                <li class="line"></li>
+                <li><a href="jaVascript:;">我的订单</a></li>
+                <li class="line"></li>
+                <li>
+                    <a href="jaVascript:;">我的京东&nbsp;</a>
+                    <i class=" fas fa-angle-down"></i>
+                </li>
+                <li class="line"></li>
+                <li><a href="jaVascript:;">JD会员</a></li>
+                <li class="line"></li>
+                <li>
+                    <a href="jaVascript:;" class="heightlight">企业采购&nbsp;</a>
+                    <i class=" fas fa-angle-down"></i>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <span>客户服务&nbsp;</span>
+                    <i class=" fas fa-angle-down"></i>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <span>网站导航&nbsp;</span>
+                    <i class=" fas fa-angle-down"></i>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <span>手机JD&nbsp;</span>
+                    <i class=" fas fa-angle-down"></i>
+                </li>
+            </ul>
+        </diV>
+    </div>
+</body>
+</html>

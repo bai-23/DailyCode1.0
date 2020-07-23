@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+            display: block;
+            width: 93px;
+            height: 29px;
+
+            background-image: url(../源码和资料/资料/图片/按钮/link.png);
+        }
+
+        a:hover{
+            background-image: url(../源码和资料/资料/图片/按钮/hover.png);
+        }
+
+        a:active{
+            background-image: url(../源码和资料/资料/图片/按钮/active.png);
+        }
+
+        /* 
+            图片属于网页中的外部资源，第一次加载时需要浏览器单独发送
+                请求加载，浏览器加载外部资源时按需加载，所以第一次点击
+                hover或active时，需要即时加载，出现“闪白现象”，影响体
+                验效果。
+            通过Network查看
+
+         */
+    </style>
+</head>
+<body>
+    <a href="javascript:;"></a>
+</body>
+</html>

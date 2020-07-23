@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 256px;
+            height: 256px;
+            background-image: url(./练习图片/bg2.png);
+            animation: run 1s steps(6) infinite;
+        }
+        @keyframes run{
+            from{
+                background-position: 0 0;
+            }   
+            to{
+                background-position:-1536px 0;
+                /* 不用考虑后面空白问题，会自动平铺 */
+            }
+        }
+        .box2{
+            width: 90px;
+            height: 100px;
+            background-image: url(./练习图片/trump_run.png);
+            animation: trum 1s steps(7) infinite;
+            
+        }
+        @keyframes trum{
+            from{
+                background-position: 0 -90px;
+            }
+            to{
+                background-position: -753px -90px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>
