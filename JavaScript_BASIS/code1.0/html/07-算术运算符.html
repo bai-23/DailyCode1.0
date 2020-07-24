@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var a = 123, b, c;
+        //typeof也是运算符，返回字符串
+        type = typeof a;
+
+        // “+”字符串与数字相加，返回字符串，是一种隐性字符串转换
+        c = c + "";
+
+        b = 1 + 1 + "3";    //结果为“23”
+
+        c = "123";
+        c = c - 0;  //c转换为数值型
+
+        var x = "12";
+        x = +x;//    转换成num类型
+
+        //  ++和--
+        var n1 = 0, n2, n3;
+        n1++;
+        console.log("n1 =", n1);
+        document.writeln(" c =", c , " → ", typeof c);
+        document.write(" x =", x , " → ", typeof x);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
