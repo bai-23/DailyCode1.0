@@ -25,11 +25,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30b427ad-b321-4d7a-b222-3a7fc0e6ac20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/code/m18_代码封装.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/m19_方法递归.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaScript_BASIS/code1.0/html/05-布尔.null.undefined.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/m20_面向对象简介.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/m4_Var.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/m4_Var.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_BASIS/m4_Var.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_BASIS/m4_Var.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/m19_方法递归.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/m19_方法递归.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_BASIS/m19_方法递归.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_BASIS/m19_方法递归.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../三大自由.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/../三大自由.xmind" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +72,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="profiler.jvm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Application.m19_方法递归">
     <configuration name="m11_循环嵌套" type="Application" factoryName="Application" nameIsGenerated="true">
@@ -177,6 +177,9 @@
       <workItem from="1595474701842" duration="136000" />
       <workItem from="1595474847320" duration="4861000" />
       <workItem from="1595487411199" duration="28000" />
+      <workItem from="1595553484181" duration="930000" />
+      <workItem from="1595554434742" duration="409000" />
+      <workItem from="1595554881170" duration="2790000" />
     </task>
     <servers />
   </component>
@@ -256,22 +259,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="733" y="214" key="FileChooserDialogImpl/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1595476304634" />
-    <state width="937" height="163" key="GridCell.Tab.0.bottom" timestamp="1595482433597">
+    <state width="776" height="198" key="GridCell.Tab.0.bottom" timestamp="1595554417735">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="937" height="163" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1595482433597" />
-    <state width="937" height="163" key="GridCell.Tab.0.center" timestamp="1595482433597">
+    <state width="776" height="198" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1595554417735" />
+    <state width="776" height="198" key="GridCell.Tab.0.center" timestamp="1595554417735">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="937" height="163" key="GridCell.Tab.0.center/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1595482433597" />
-    <state width="937" height="163" key="GridCell.Tab.0.left" timestamp="1595482433597">
+    <state width="776" height="198" key="GridCell.Tab.0.center/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1595554417735" />
+    <state width="776" height="198" key="GridCell.Tab.0.left" timestamp="1595554417735">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="937" height="163" key="GridCell.Tab.0.left/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1595482433597" />
-    <state width="937" height="163" key="GridCell.Tab.0.right" timestamp="1595482433597">
+    <state width="776" height="198" key="GridCell.Tab.0.left/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1595554417735" />
+    <state width="776" height="198" key="GridCell.Tab.0.right" timestamp="1595554417735">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="937" height="163" key="GridCell.Tab.0.right/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1595482433597" />
+    <state width="776" height="198" key="GridCell.Tab.0.right/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1595554417735" />
     <state width="937" height="163" key="GridCell.Tab.1.bottom" timestamp="1595482433598">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -292,10 +295,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="290" y="141" key="NewModule_or_Project.wizard/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1595474765938" />
-    <state x="131" y="41" width="1038" height="793" key="SettingsEditor" timestamp="1595475023404">
+    <state x="28" y="41" width="1038" height="793" key="SettingsEditor" timestamp="1595555464932">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="131" y="41" width="1038" height="793" key="SettingsEditor/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1595475023404" />
+    <state x="28" y="41" width="1038" height="793" key="SettingsEditor/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1595555464932" />
     <state x="266" y="198" width="627" height="479" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1595476312359">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
