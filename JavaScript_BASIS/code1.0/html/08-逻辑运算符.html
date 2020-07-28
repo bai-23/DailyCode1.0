@@ -14,9 +14,45 @@
 
         var result = true & true;
         console.log(result);
+
+        var re = 1 && 2;
+        re = NaN && 0;
+
+    //    关系运算符
+        console.log('1 >= \'0\'', 1 >= '0');
+        console.log(1 == 2);
+        console.log(1 == '1');
+        console.log(null == 0);
+        console.log(null == undefined);
+        console.log(null == NaN);
+
+
+        
+        console.log('1' === 1);
+
+        // 条件运算符
+        var a = 2, b = 3, c = 4;
+        var max = a > b ? a:b;
+        max = max > c ? max : c;
+
+        max = a>b ? (a>c ? a : c) : (b>c ? b:c);
+        // 码见打
+        console.log(max);
+
+
+
+
+00
+
+        // 输出utf编码
+        console.log('\u2620');
+
     </script>
 </head>
 <body>
 
+    <!-- 使用Unicode编码 -->
+    <h1>&#9760;</h1>
+    <!-- 必须是10进制 -->
 </body>
 </html>

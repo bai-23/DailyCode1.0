@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        var obj = new Object();
+        document.write(typeof obj);
+        document.writeln('<hr/>');
+    //    像对象中添加属性
+        obj.name = '孙悟空';
+        obj.gender = 'man';
+        obj.age = '18';
+
+        delete  obj.name;
+        console.log(obj);
+        console.log(obj.name);
+
+    //    属性名和属性值
+        obj.var = "hello";
+
+
+        obj["123"] = 789;
+        console.log(obj.var);
+        console.log("name" in obj);
+
+        var obj2 = obj;
+        obj2 = null;
+    //    对象字面量
+        var obj3 = {
+            name:"song",
+            age:"18"};
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

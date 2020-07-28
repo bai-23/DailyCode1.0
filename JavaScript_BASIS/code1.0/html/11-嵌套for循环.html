@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        // var arr=[2][2];
+        for(var i=0; i<=5; i++){
+            for (var j=0; j<i; j++){
+                document.writeln("*");
+            }
+            document.writeln('<br/>');
+        }
+        for(var i=0; i<=5; i++){
+            for (var j=5-i; j>0; j--){
+                document.writeln("*");
+            }
+            document.writeln('<br/>');
+        }
+        document.writeln('<hr/>');
+
+    //    测试程序性能，开启计时器
+        console.time("test");
+    //    99乘法表
+        for (var i=1; i<=9; i++){
+            for (var j=1; j<=i; j++){
+                document.writeln("<span>"+j+"×"+i+"="+i*j+"</span>");
+            }
+            document.writeln('<br/>');
+        }
+        //关闭计时器
+        console.timeEnd("test");
+    </script>
+    <style>
+        body{
+            width: 2000px;
+        }
+        span{
+            display: inline-block;
+            width: 90px;
+        }
+    </style>
+</head>
+<body>
+
+</body>
+</html>
