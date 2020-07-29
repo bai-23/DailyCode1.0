@@ -1,0 +1,27 @@
+// 混合
+.juzhong(@w, @h, @c){
+    position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background: @c;
+      height: @w;
+      width: @w;
+      display: block;
+}
+  #wrap{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    border: #000000 solid 1px;
+    margin: 0 auto;
+    .inner{
+      .juzhong(100px, 100px, pink);
+    }
+    .inner2{
+        .juzhong(200px, 200px, rgba(0, 0, 0, 0.5));
+    }
+
+  }

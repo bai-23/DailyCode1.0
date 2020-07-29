@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+<!--        判断偶数-->
+        function f1(num) {
+            return num % 2 == 0;
+        }
+        var res = f1(5);
+        document.write(res);
+        document.write('<hr/>');
+    //    计算圆面积
+        function Area(r) {
+            return 3.15*r*r;
+        }
+        area1 = Area(4);
+        document.write(area1);
+document.write('<hr/>');
+    //    输出人的信息
+        var obj = {
+            name:"song",
+            age:"18",
+            gender:"man",
+            addr:"www"
+        };
+        function per(p) {
+            document.write(p.name+' | '+p.age+' | '+p.gender+' | '+p.addr);
+        }
+        per(obj);
+
+    //    立即执行函数
+        (function(){alert('我是匿名函数~~');})();
+
+    //  遍历属性
+document.write('<hr/>');
+for (var i in obj) {
+    document.writeln(obj[i]);
+}
+    </script>
+</head>
+<body>
+
+</body>
+</html>

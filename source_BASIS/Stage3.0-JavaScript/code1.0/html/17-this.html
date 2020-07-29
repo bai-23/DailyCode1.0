@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function fun() {
+            console.log(this.name);
+
+        }
+        fun();
+        var name = "这是window的name";
+        //创建一个对象
+        var obj = {
+            name:'孙',
+            sayName:fun
+        }
+        // console.log(obj.sayName==fun);  true
+        obj.sayName();//    以方法形式：打印的是 obj 对象的内容，相当于obj.name
+        fun();        //    以函数形式：打印结果是 window，相当于window.fun
+
+        var obj1 = {
+            name:'猪八戒',
+            sayName:fun
+        }
+        obj1.sayName();
+        console.log(obj1.name);
+
+        //==================this补充=====================
+        console.log('------------------');
+        var name1 = '全局';
+        function sayname() {
+            console.log(this.name);.
+        //    不同对象调用使用this指向不同对象
+        }
+        var obj2 = {
+            name:'沙和尚',
+            SayName:sayname
+        }
+        var obj3 = {
+            name:'猪',
+            SayName:sayname
+        }
+        sayname();
+        obj2.SayName();
+        obj3.SayName();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

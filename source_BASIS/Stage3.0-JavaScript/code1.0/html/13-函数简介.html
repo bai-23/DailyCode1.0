@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+    <!--        也是一个对象-->
+
+        var fuc = new Function("document.write('hello');");
+        // document.write(typeof fuc);
+        fuc();
+        document.writeln('<hr/>');
+        //方法二
+        function fun1() {
+            document.write('hi');
+        }
+        fun1();
+        document.writeln('<hr/>');
+    //    方法三
+        var fun3 = function () {
+            document.write('hi2');
+        }
+        fun3();
+
+        document.write('<hr/>');
+        //函数参数
+        var a, b;
+        function f1(a, b) {
+            document.write(a+b);
+        }
+        /*a = +prompt("输入a：");
+        b = +prompt("输入b：");
+        f1(a, b);*/
+        document.write('<hr/>');
+        //    返回值
+        function sum(a,b,c) {
+            return a+b+c;
+        }
+        res = sum(1,2,3);
+        document.write('res='+res);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
