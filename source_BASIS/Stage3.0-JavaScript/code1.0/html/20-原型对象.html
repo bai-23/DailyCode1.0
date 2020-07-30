@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function fun() {
+
+        }
+        fun.prototype.name = '我是原型的名字';
+        var mc = new fun();
+        document.writeln(mc.name);
+        //使用in检查对象是否含有某个属性，对象没有但是原型有
+        document.writeln('name' in mc);
+        //使用hasOwnPrototy（）检查自身中是否含有某属性
+        document.writeln(mc.hasOwnProperty('name'));
+        document.write('<br/>');
+        //原型的原型
+        document.writeln(mc.__proto__.__proto__);
+        //原型的原型的原型
+        document.writeln(mc.__proto__.__proto__.__proto__);//null
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

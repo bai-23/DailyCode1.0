@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //原型prototype
+        //我们所创建的每一个函数，解析器都会向函数中添加一个属性prototype
+
+        function Person(name) {
+            this.name = name;
+        }
+        var per1 = new Person('我是per1');
+        var per2 = new Person('我是per2');
+        document.write(Person.prototype);
+        document.write('<br/>');
+        document.write(per1.__proto__);
+        document.write('<br/>');
+        document.write(per1.__proto__ == Person.prototype);
+
+        // prototype.name = 'song';
+        Person.prototype.seyhello = function (name) {
+            this.name = name;
+            alert(this.name+'hello');
+        };
+        Person.prototype.sayname = function(){
+            alert("hello i'm "+ this.name);
+        };
+        // per1.seyhello(per1.name);
+        // per2.seyhello(per2.name);
+        per1.sayname();
+        per2.sayname();
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

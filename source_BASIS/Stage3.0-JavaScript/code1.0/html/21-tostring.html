@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function Person(name, age, sex) {
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+        }
+        var per = new Person("pig", 18, 'man');
+        //当我们直接在页面中打印一个对象时，其实是输出对象的toString方法返回值
+        //可添加一个toString方法重写
+        Person.prototype.toString = function(){
+            return "name:"+this.name+", age:"+this.age+", sex:"+this.sex;
+        };
+        console.log(per);
+        // document.writeln(per.toString());
+        // document.writeln(per.__protr__.__proto__.hasOwnProperty("toString"));
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

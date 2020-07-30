@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+<!--        创建狗对象-->
+        function dog(name, age) {
+            var obj = new Object();
+            obj.name = name;
+            obj.age = age;
+            obj.sayhi = function () {
+                alert('旺旺');
+            }
+            return obj;
+        }
+        var dog1 = dog('旺财', 18);
+
+    //===============构造函数==================
+    //    创建一个构造函数:Person类
+        function Person(name,age) {
+            this.name = name;
+            this.age = age;
+            this.sayName = say;
+        }
+        //优化：将类中方法提取出来，定义在外部，避免每次new时都会创建该方法
+        //缺点：会污染全局作用域的命名空间，而且定义在全局作用域很不安全
+        function say() {
+            alert(this.name);
+        }
+        var per1 = new Person('孙悟空', 15);//person类的实例
+        var per2 = new Person('宋', 19);
+        console.log(per1.name);
+        console.log(per1.sayName());
+        console.log(per1 instanceof Person);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
