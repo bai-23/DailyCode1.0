@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //去重
+        var arr = [1, 2, 4, 2, 4, 3, 1, 5, 5];
+        for (var i=0; i<arr.length; i++){
+            //获取当前元素后的所有元素
+            for (var j=i+1; j<arr.length; j++){
+                if (arr[i] == arr[j]){
+                    arr.splice(j,1);
+                    j--;
+                }
+
+            }
+        }
+        console.log(arr);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

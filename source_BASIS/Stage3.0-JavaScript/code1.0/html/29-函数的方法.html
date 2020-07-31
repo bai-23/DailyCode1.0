@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function fun() {
+            alert(this.name);
+            alert(this);
+        }
+        var obj1 = {
+            name:'song',
+            sayNamE:function () {
+                alert(this.name);
+            }};
+        var obj2 = {name: 'sun'};
+
+        // fun.call(obj1, 2, 3);
+        // fun();
+        // fun.apply(obj, [1, 2]);
+        // obj1.sayNamE.apply(obj2);// 孙
+
+        //==========================================
+        //arguments
+        function fun1() {
+            document.writeln(arguments);
+            // document.writeln(Array.isArray(arguments));
+            document.writeln(arguments.length);
+            document.writeln(arguments.callee);
+
+        }
+        fun1(true);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

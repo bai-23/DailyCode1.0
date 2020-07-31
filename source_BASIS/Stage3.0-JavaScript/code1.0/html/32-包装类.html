@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var a = 1;
+
+        var num = new Number(3);
+        num.hello = 'hello';
+        document.writeln(typeof num,'<br/>');
+        document.writeln(num.hello);
+
+        var s = 123;
+        s = s.toString();//第一次转换
+
+        s.hello = '你好';//第二次转换，两者不是同一对象
+        console.log(s.hello);
+
+        // var obj;
+        // obj = document.getElementById("demo");
+        // obj.innerHTML = "Hello";
+    </script>
+</head>
+<body>
+
+</body>
+</html>

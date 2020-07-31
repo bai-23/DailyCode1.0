@@ -25,13 +25,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30b427ad-b321-4d7a-b222-3a7fc0e6ac20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/code/m21_student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/m22_user.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/m23_address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/m24_prac.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/m25_方法调用时参数传递.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/m25_构造方法.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/m26_构造方法.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/m27_封装简介.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/m20_类定义.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/m20_类定义.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_BASIS/m19_方法递归.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_BASIS/m19_方法递归.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xmind/java.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/../xmind/java.xmind" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +74,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
-  <component name="RunManager" selected="Application.m24_prac">
+  <component name="RunManager" selected="Application.m27_封装简介">
     <configuration name="m11_循环嵌套" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="m11_循环嵌套" />
       <module name="Java_BASIS" />
@@ -105,34 +103,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="m19_方法递归" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="m19_方法递归" />
-      <module name="Java_BASIS" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="m20_类定义" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="m20_类定义" />
-      <module name="Java_BASIS" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="m21_student" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="m21_student" />
-      <module name="Java_BASIS" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="m22_user" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="m22_user" />
-      <module name="Java_BASIS" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="m24_prac" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="m24_prac" />
       <module name="Java_BASIS" />
@@ -140,13 +110,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="m25_方法调用时参数传递" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="m25_方法调用时参数传递" />
+      <module name="Java_BASIS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="m25_构造方法" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="m25_构造方法" />
+      <module name="Java_BASIS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="m26_构造方法" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="m26_构造方法" />
+      <module name="Java_BASIS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="m27_封装简介" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="m27_封装简介" />
+      <module name="Java_BASIS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.m27_封装简介" />
+        <item itemvalue="Application.m26_构造方法" />
+        <item itemvalue="Application.m25_构造方法" />
+        <item itemvalue="Application.m25_方法调用时参数传递" />
         <item itemvalue="Application.m24_prac" />
-        <item itemvalue="Application.m22_user" />
-        <item itemvalue="Application.m21_student" />
-        <item itemvalue="Application.m20_类定义" />
-        <item itemvalue="Application.m19_方法递归" />
       </list>
     </recent_temporary>
   </component>
@@ -183,6 +181,7 @@
       <workItem from="1595554434742" duration="409000" />
       <workItem from="1595554881170" duration="4445000" />
       <workItem from="1596071317435" duration="9800000" />
+      <workItem from="1596158267918" duration="7182000" />
     </task>
     <servers />
   </component>
@@ -262,22 +261,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="733" y="214" key="FileChooserDialogImpl/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1595476304634" />
-    <state width="873" height="130" key="GridCell.Tab.0.bottom" timestamp="1596082198064">
+    <state width="874" height="142" key="GridCell.Tab.0.bottom" timestamp="1596167042268">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="873" height="130" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1596082198064" />
-    <state width="873" height="130" key="GridCell.Tab.0.center" timestamp="1596082198064">
+    <state width="874" height="142" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1596167042268" />
+    <state width="874" height="142" key="GridCell.Tab.0.center" timestamp="1596167042268">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="873" height="130" key="GridCell.Tab.0.center/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1596082198064" />
-    <state width="873" height="130" key="GridCell.Tab.0.left" timestamp="1596082198064">
+    <state width="874" height="142" key="GridCell.Tab.0.center/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1596167042268" />
+    <state width="874" height="142" key="GridCell.Tab.0.left" timestamp="1596167042268">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="873" height="130" key="GridCell.Tab.0.left/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1596082198064" />
-    <state width="873" height="130" key="GridCell.Tab.0.right" timestamp="1596082198064">
+    <state width="874" height="142" key="GridCell.Tab.0.left/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1596167042268" />
+    <state width="874" height="142" key="GridCell.Tab.0.right" timestamp="1596167042268">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="873" height="130" key="GridCell.Tab.0.right/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1596082198064" />
+    <state width="874" height="142" key="GridCell.Tab.0.right/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1596167042268" />
     <state width="937" height="163" key="GridCell.Tab.1.bottom" timestamp="1595482433598">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -306,10 +305,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="266" y="198" width="627" height="479" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1595476312359" />
-    <state x="269" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1595476261195">
+    <state x="270" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1596161327403">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="269" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1595476261195" />
+    <state x="270" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1596161327403" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

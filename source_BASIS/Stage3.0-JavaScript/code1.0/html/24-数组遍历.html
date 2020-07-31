@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var arr = ['sun','pig','sha'];
+        //方法一
+        for (var i = 0; i < arr.length; i++){
+            // console.log((i)+' → '+arr[i]);
+        }
+        //方法二
+        for (var j in arr){
+            // console.log(arr[j]);
+        }
+
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        Person.prototype.toString = function () {
+            return "Person[name="+this.name+",age="+this.age+"]";
+        }
+        var per1 = new Person('sunwuk', 18);
+        var per2 = new Person('sunwu', 10);
+        var per3 = new Person('sunw', 14);
+        var per4 = new Person('sun', 12);
+        // console.log(per1);
+        //将这些对象放在数组中
+        var perarr = [per1, per2, per3, per4];
+        // console.log(perarr);
+        //创建一个函数，提前满18岁的对象，封装到新数组并返回
+        function get18(arr) {
+            var newarr = [];
+            for (var i=0; i<arr.length; i++){
+                if (arr[i].age>=18){
+                    newarr.push(arr[i]);
+                }
+            }
+            return newarr;
+        }
+        var res = get18(perarr);
+        console.log(res);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

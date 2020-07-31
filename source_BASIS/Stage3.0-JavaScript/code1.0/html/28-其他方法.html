@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var arr = ['sun','pig','sha'];
+        var arr1 = ['孙','吧唧','是'];
+        var arr2 = ['sun','pig','sha'];
+        var res = arr1.concat(arr, arr2, 'niu');
+        console.log(res);
+
+        res1 = arr.join('-');
+        console.log(res1);
+
+        arr.reverse();
+        var arr0 = [1, 5, 6, 9, 55, 66, 11];
+        arr0.sort(function (a, b) {
+            /*if (a>b){
+                return 1;//交换
+            }else if (a<b){
+                return -1;//不换
+            }else {
+                return 0;
+            }*/
+            return a-b;//升序
+        });
+        console.log(arr0);
+    </script>
+
+
+</head>
+<body>
+
+</body>
+</html>
