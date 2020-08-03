@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/02-表单练习.css">
+</head>
+<body>
+    <form action="" >
+        <fieldset>
+            <!-- 表单标题 -->
+            <legend>学生档案</legend>
+            <label for="">姓名：</label>
+            <input type="text" name="userName" id="userName" placeholder="请输入用户名">
+            <label for="usertel">手机号码：</label>
+            <input type="tel" name="usertel" id="usertel" placeholder="请输入电话号码" pattern="^1\d{10}$">
+            <label for="email">email：</label>
+            <input type="email" name="email" required id="email" placeholder="邮箱地址">
+            <label for="">所属学院：</label>
+            <input type="text" name="college" id="college" list="clist" placeholder="请选择">
+            <datalist id="clist">
+                <option value="前端开发"></option>
+                <option value="前端开发"></option>
+                <option value="前端开发"></option>
+                <option value="前端开发"></option>
+            </datalist>
+            <label for="score">入学成绩：</label>
+            <input type="number" max="100" min="0" value="0" id="score">
+            <label for="">基础水平：</label>
+            <meter id="level" max="100" min="0" low="59" high="90"></meter>
+            <label for="">入学日期：</label>
+            <input type="date" id="intime" name="intime">
+            <label for="">毕业日期：</label>
+            <input type="date" id="outime" name="outime">
+            <input type="submit">
+        </fieldset>
+        
+    </form>
+    <script>
+        document.getElementById('score').oninput=function(){
+            document.getElementById("level").value=this.value;
+        }
+    </script>
+</body>
+</html>

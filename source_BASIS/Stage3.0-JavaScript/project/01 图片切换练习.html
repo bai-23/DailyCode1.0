@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #outer{
+            width: 500px;
+            /*height: 300px;*/
+            margin: 50px auto;
+            padding: 10px;
+            /*background-color: #ffff00;*/
+            text-align: center;
+            /*overflow: hidden;*/
+        }
+
+    </style>
+    <script>
+        window.onload = function () {
+            //获取两个按钮
+            var prev = document.getElementById('prev');
+            var next = document.getElementById('next');
+            //设置info：获取info的p元素
+            var info = document.getElementById('info');
+
+            //获取img标签
+            var img = document.getElementsByTagName('img')[0];
+            //创建一个数组保存img路径
+            var imgarr = ['./img/1.jpg','./img/2.jpg','./img/3.jpg','./img/4.jpg']
+            //创建一个变量保存当前显示图片的索引
+            var index = 0;
+            //设置单击响应函数
+            prev.onclick = function () {
+                index--;
+
+                if (index<0){
+                    index = imgarr.length-1;
+                }
+                info.innerHTML = '当前第'+(index+1)+'张';
+                img.src = imgarr[index];
+
+            };
+            next.onclick = function () {
+                // alert('n');
+                //修改img属性的src元素
+                index++;
+                if (index>imgarr.length-1){
+                    index = 0;
+                }
+                info.innerHTML = '当前第'+(index+1)+'张';
+                img.src = imgarr[index];
+
+            };
+
+        };
+    </script>
+</head>
+<body>
+    <div id="outer">
+        <p id="info">当前第1张</p>
+        <img src="img/1.jpg" alt="a1" width="500px">
+
+        <button id="prev">&nbsp<&nbsp</button>
+        <button id="next">&nbsp>&nbsp</button>
+    </div>
+</body>
+</html>

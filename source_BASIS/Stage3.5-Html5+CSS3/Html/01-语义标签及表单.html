@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- div -->
+    <header></header>
+    <form action="">
+        username：<input type="text" name="userName"><br>
+        pass：<input type="password" name="userPwd"><br>
+        emil：<input type="email"><br>
+        tel：<input type="tel"><br>
+        网址：<input type="url"><br>
+        数字：<input type="number"><br>
+        商品名称：<input type="search"><br>
+        range：<input type="range" max="100" min="0" value="10"><br>
+        color：<input type="color"><br>
+
+        time：<input type="time">
+    </form>
+
+    ===================================
+    <form action="">
+        <input type="text" placeholder="用户名" autofocus>
+        <input type="tel" required pattern="^(\+86)?1\d{10}$">
+        <input type="file" multiple>
+        <input type="submit">
+    </form>
+    ========================================
+    <form action="">
+        专业：
+        <select name="" id="">
+            <option value="1">前端与移动开发</option>
+            <option value="2">java</option>
+            <option value="3">js</option>
+        </select>
+        专业：
+        <input type="text" list="sub">
+        <datalist id="sub">
+            <option value="前端" label="好"></option>
+            <option value="java" label="还行"></option>
+            <option value="嘿嘿嘿" label="的"></option>
+        </datalist>
+        <br>
+        <!-- <keygen> -->
+            <output>money;100</output>
+    </form>
+    =============================================
+    <form action="">
+        name: <input type="text" name="userName" id="userName"><br>
+        tel: <input type="tel" name="userTel" id="userTel"><br>
+        <input type="submit">
+    </form>
+    <script>
+        document.getElementById("userName").oninput=function(){
+            alert(this.value);
+        }
+        document.getElementById("userName").onkeyup=function(){
+            alert(this.value);
+        }
+    </script>
+    ===================================
+    <progress></progress>
+    <meter max="100" min="0" value="50"></meter>
+</body>
+</html>

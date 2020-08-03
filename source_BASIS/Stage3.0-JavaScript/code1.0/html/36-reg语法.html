@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var str = 'fsdfd';
+
+        var reg = /(ab){3}/;
+        document.writeln(reg.test('ababab'));
+
+        reg = /ab+c/;
+        //练习，检查手机号
+        //规则：1开头，第二位3-9任意数字，第三位任意数字，三位以后任意数字9个
+        var ph = '12856789012';
+        var reg1=/^1[3-9][0-9]{9}$/;//必须有 $,限制位数
+        document.writeln(reg1.test(ph));
+
+        //检查字符串是否含有 .
+        var reg2 = /\./;
+
+        //检查一个字符串是否含有child
+        reg = /\bchild\b/;
+        document.writeln(reg.test('asfsdf childs sf'));
+
+        //接收用户输入
+        // var str = prompt('请输入用户名：');
+        //自动去除多余空格
+
+         str = str.replace(/\s/g,'');//去除全部空格
+         str = str.replace(/^\s* | \s*$/g,'');//去除开头与结尾的空格
+         document.writeln(str);
+
+         //邮件
+        //任意字母下划线 .任意字母下划线 @ 任意字母数字 .任意字母(2-5位) .任意字母(2-5位)
+        var emil = 'abc@abc.com.123';
+        var reg4 = /^\w{3,}(\.\w+)*@[A-z0-9]+(\.[A-z]{2,5}){1,2}$/;
+        document.writeln('<br/>',reg4.test(emil));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

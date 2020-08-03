@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var str = '1a2b3c4d5e6fA';
+
+        //split
+        var res = str.split(/[A-z]/);
+        document.writeln(res);
+
+        res1 = str.search(/a[0-9]b/);
+
+        res2 = str.match(/[A-z]/g);
+
+        document.writeln(res1, res2, res2[1]);
+
+        res3 = str.replace('a', '@+@');
+        document.writeln(res3);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

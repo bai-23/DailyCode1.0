@@ -1,0 +1,2 @@
+import package
+print(package)

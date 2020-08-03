@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+// 使用混合
+@import "./09juzhong.less";
+#wrap{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 1px solid;
+    margin: 0 auto;
+
+    .inner{
+        &:extend(.juzhong all);
+        &:nth-child(1){
+            width: 100px;
+            height: 100px;
+            background: yellow;
+        }
+        &:nth-child(2){
+            width: 50px;
+            height: 50px;
+            background: black;
+        }
+    }
+}
