@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1{
+            width: 100px;
+            height: 100px;
+            background-color: antiquewhite;
+        }
+    </style>
+    <script>
+        window.onload = function(){
+
+            //点击按钮后获取box1样式
+            var box1 = document.getElementById('box1');
+            //绑定响应函数
+            var btn1 = document.getElementById('btn1');
+            btn1.onclick = function(){
+                //读取width
+                //获取元素当前显示的样式              
+                // alert(box1.currentStyle.width);
+                // alert(getComputedStyle(box1, null).width);
+                alert(getsyle(box1, 'width'));
+            };
+        };
+
+        //定义一个函数返回指定元素的样式
+        function getsyle(obj, stylename){ 
+            if(window.getComputedStyle){
+                //正常浏览器
+                return getComputedStyle(obj, null)[stylename];
+            }else{
+                //ie8
+                return obj.currentStyle[stylename];
+            }
+        }
+    </script>
+</head>
+<body>
+    <button id="btn1">touch</button>
+    <div id="box1" style="width: 200px;"></div>
+</body>
+</html>

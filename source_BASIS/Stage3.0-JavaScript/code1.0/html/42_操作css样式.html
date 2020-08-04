@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+    </style>
+    <script>
+        window.onload = function(){
+
+            // 点击按钮修改box1大小
+            //获取box1
+            var box1 = document.getElementById('box1');
+            //绑定响应函数
+            var btn1 = document.getElementById('btn1');
+            btn1.onclick = function(){
+                //修改box1宽度
+                box1.style.width = '100px';
+                box1.style.height = '100px';
+                box1.style.backgroundColor = 'yellow';
+                box1.style.boxShadow = '10px 10px 5px yellow';
+
+            };
+
+            //点击按钮2读取元素元素内容
+            var btn2 = document.getElementById('btn2');
+            btn2.onclick = function () {
+                //   alert(box1.style.width);
+                  alert(box1.style.height);
+            }; 
+
+        };
+    </script>
+</head>
+<body>
+    <button id="btn1">点我一下</button>
+    <button id="btn2">点我一下w</button>
+    <div id="box1"></div>
+
+
+</body>
+</html>

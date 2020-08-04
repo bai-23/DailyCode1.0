@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <button id="btn">botton1</button>
+    <script type="text/javascript">
+        //window属性
+        //获取btn对象
+        var btn = document.getElementById("btn");
+        // document.writeln(btn);
+        //修改按钮的文字
+        // document.writeln(btn.innerHTML);
+        btn.innerHTML = '我变了';
+    </script>
+
+    <!--事件-->
+    <button id="btn1" ondblclick="alert('你点我？');">botton2</button>
+    <script>
+<!--        处理事件-->
+        var btn1 = document.getElementById("btn1");
+        //单击响应函数
+        btn1.ondblclick = function () {
+            alert('js中的');
+        }
+    </script>
+</body>
+</html>

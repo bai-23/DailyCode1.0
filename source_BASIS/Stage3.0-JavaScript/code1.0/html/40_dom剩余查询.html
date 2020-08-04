@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        window.onload=function () {
+            //获取body标签
+            //方法一
+            var body = document.getElementsByTagName('body')[0];
+            //方法二
+            // var body = document.body;
+
+            var de = document.documentElement;
+            // document.writeln(de);
+
+            var all = document.all;
+            // document.writeln(all.length);
+
+            var box = document.getElementsByClassName('box1');
+            // document.writeln(box.length);
+
+            var divs = document.getElementsByTagName('div');
+            var divs = document.querySelector('.box1');
+            console.log(divs.innerText);
+            //获取box2里面的div
+            var div2 = document.querySelector('.box2 div');
+            console.log(div2.innerHTML);
+
+            var all1 = document.querySelectorAll('.box1');
+            console.log(all1.length);
+
+        };
+    </script>
+</head>
+<body>
+    <div class="box1">ws</div>
+    <div class="box2">
+        <div>我是inner</div>
+    </div>
+    <div class="box1"></div>
+</body>
+</html>

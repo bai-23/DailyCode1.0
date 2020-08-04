@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1{
+            width: 100px;
+            height: 100px;
+            background-color: antiquewhite;
+            padding: 10px;
+
+            margin: 0 auto;
+        }
+        #box2{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            position: relative;
+        }
+        #box4{
+            width: 200px;
+            height: 300px;
+            background-color: rgb(65, 100, 88);
+            overflow: auto;
+        }
+        #box5{
+            width: 350px;
+            height: 600px;
+            background-color: rgb(72, 100, 40);
+        }
+    </style>
+    <script type="text/javascript">
+
+        window.onload = function(){
+            var box1 = document.getElementById('box1');
+            var box4 = document.getElementById('box4');
+            var btn1 = document.getElementById('btn1');
+            
+            btn1.onclick = function(){
+                // alert(box1.clientHeight);
+                // box1.clientHeight = '100';
+
+                // alert(box1.offsetHeight);
+
+                var op = box1.offsetParent;
+                // alert(op.id);
+
+                //===================
+                // alert(box1.offsetLeft);
+
+                // alert(box4.clientHeight);
+                // alert(box4.scrollHeight);
+                // alert(box4.scrollTop);
+                alert(box4.scrollHeight - box4.scrollTop);
+
+            };
+        };
+    </script>
+</head>
+<body>
+    <button id="btn1">sf</button>
+    <div id="box2">
+        <div id="box1"></div>
+    </div>
+    <div id="box4">
+        <div id="box5"></div>
+    </div>
+
+    
+</body>
+</html>
