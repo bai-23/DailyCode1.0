@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #areaDiv{
+            width: 400px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+        #showMsg{
+            width: 200px;
+            border: 1px solid black;
+            margin: 10px auto;           
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            //鼠标在areaDiv移动时，showMsg显示鼠标的坐标
+
+            //获取两个div
+            var area = document.getElementById('areaDiv');
+            var show = document.getElementById('showMsg');
+
+            area.onmousemove = function(event){
+                //show中显示坐标
+
+                event = event || window.event;//处理ie8兼容问题
+                var x = event.clientX;
+                var y = event.clientY;
+
+                // alert(x,y);
+                show.innerHTML = 'x='+x+' y='+y;
+            };
+        };
+    </script>
+</head>
+<body>
+    <div id="areaDiv"></div>
+    <div id="showMsg"></div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            var btn1 = document.getElementById('btn1');
+            var u1 = document.getElementById('u1');
+            btn1.onclick = function(){
+                //创建一个li
+                var li = document.createElement('li');
+                li.innerHTML = "<a href='javascript:;' class='link'>new超1</a>";
+
+                u1.appendChild(li);
+            };
+
+            //为每一个链接绑定单击响应
+            var allA = document.getElementsByTagName('a');
+            // for(var i=0; i<allA.length; i++){
+            //     allA[i].onclick = function(){
+            //         alert('sd');
+            //     };
+
+            // }
+            //希望只绑定一次事件。即可应用到多个元素上，包括后添加的
+            u1.onclick = function(event){
+                //如果单击的是期望的事件，则执行
+                if(event.target.className == 'link'){
+                    alert('hfh');
+                }
+                
+            };
+        };
+    </script>
+</head>
+<body>
+    <button id="btn1">添加超链接</button>
+    <ul id="u1">
+        <li><a href="javascript:;" class="link">超1</a></li>
+        <li><a href="javascript:;" class="link">超2</a></li>
+        <li><a href="javascript:;" class="link">超3</a></li>
+    </ul>
+</body>
+</html>

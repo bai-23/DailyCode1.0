@@ -25,12 +25,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30b427ad-b321-4d7a-b222-3a7fc0e6ac20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/code/m25_方法调用时参数传递.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/m25_构造方法.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/m26_构造方法.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/m27_封装简介.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/m28_static.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/m29_this.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/m27_封装简介.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/m27_封装简介.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_BASIS/m27_封装简介.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_BASIS/m27_封装简介.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xmind/java.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/../xmind/java.xmind" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xmind/前端/04-JavaScript.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/../xmind/前端/04-JavaScript.xmind" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +76,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
-  <component name="RunManager" selected="Application.m27_封装简介">
+  <component name="RunManager" selected="Application.m29_this">
     <configuration name="m11_循环嵌套" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="m11_循环嵌套" />
       <module name="Java_BASIS" />
@@ -99,13 +101,6 @@
       <option name="MAIN_CLASS_NAME" value="m17_方法重载" />
       <module name="Java_BASIS" />
       <shortenClasspath name="MANIFEST" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="m24_prac" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="m24_prac" />
-      <module name="Java_BASIS" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -138,13 +133,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="m28_static" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="m28_static" />
+      <module name="Java_BASIS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="m29_this" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="m29_this" />
+      <module name="Java_BASIS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.m29_this" />
+        <item itemvalue="Application.m28_static" />
         <item itemvalue="Application.m27_封装简介" />
         <item itemvalue="Application.m26_构造方法" />
-        <item itemvalue="Application.m25_构造方法" />
         <item itemvalue="Application.m25_方法调用时参数传递" />
-        <item itemvalue="Application.m24_prac" />
       </list>
     </recent_temporary>
   </component>
@@ -182,6 +191,7 @@
       <workItem from="1595554881170" duration="4445000" />
       <workItem from="1596071317435" duration="9800000" />
       <workItem from="1596158267918" duration="7182000" />
+      <workItem from="1596676644379" duration="8400000" />
     </task>
     <servers />
   </component>
@@ -261,38 +271,38 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="733" y="214" key="FileChooserDialogImpl/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1595476304634" />
-    <state width="874" height="142" key="GridCell.Tab.0.bottom" timestamp="1596167042268">
+    <state width="692" height="163" key="GridCell.Tab.0.bottom" timestamp="1596688208145">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="874" height="142" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1596167042268" />
-    <state width="874" height="142" key="GridCell.Tab.0.center" timestamp="1596167042268">
+    <state width="692" height="163" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1596688208145" />
+    <state width="692" height="163" key="GridCell.Tab.0.center" timestamp="1596688208145">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="874" height="142" key="GridCell.Tab.0.center/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1596167042268" />
-    <state width="874" height="142" key="GridCell.Tab.0.left" timestamp="1596167042268">
+    <state width="692" height="163" key="GridCell.Tab.0.center/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1596688208145" />
+    <state width="692" height="163" key="GridCell.Tab.0.left" timestamp="1596688208145">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="874" height="142" key="GridCell.Tab.0.left/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1596167042268" />
-    <state width="874" height="142" key="GridCell.Tab.0.right" timestamp="1596167042268">
+    <state width="692" height="163" key="GridCell.Tab.0.left/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1596688208145" />
+    <state width="692" height="163" key="GridCell.Tab.0.right" timestamp="1596688208145">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="874" height="142" key="GridCell.Tab.0.right/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1596167042268" />
-    <state width="937" height="163" key="GridCell.Tab.1.bottom" timestamp="1595482433598">
+    <state width="692" height="163" key="GridCell.Tab.0.right/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1596688208145" />
+    <state width="692" height="163" key="GridCell.Tab.1.bottom" timestamp="1596688208145">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="937" height="163" key="GridCell.Tab.1.bottom/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1595482433598" />
-    <state width="937" height="163" key="GridCell.Tab.1.center" timestamp="1595482433598">
+    <state width="692" height="163" key="GridCell.Tab.1.bottom/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1596688208145" />
+    <state width="692" height="163" key="GridCell.Tab.1.center" timestamp="1596688208145">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="937" height="163" key="GridCell.Tab.1.center/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1595482433598" />
-    <state width="937" height="163" key="GridCell.Tab.1.left" timestamp="1595482433598">
+    <state width="692" height="163" key="GridCell.Tab.1.center/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1596688208145" />
+    <state width="692" height="163" key="GridCell.Tab.1.left" timestamp="1596688208145">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="937" height="163" key="GridCell.Tab.1.left/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1595482433598" />
-    <state width="937" height="163" key="GridCell.Tab.1.right" timestamp="1595482433598">
+    <state width="692" height="163" key="GridCell.Tab.1.left/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1596688208145" />
+    <state width="692" height="163" key="GridCell.Tab.1.right" timestamp="1596688208145">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="937" height="163" key="GridCell.Tab.1.right/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1595482433598" />
+    <state width="692" height="163" key="GridCell.Tab.1.right/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1596688208145" />
     <state x="290" y="141" key="NewModule_or_Project.wizard" timestamp="1595474765938">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

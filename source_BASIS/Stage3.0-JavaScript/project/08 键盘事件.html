@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+    <script>
+        window.onload = function(){
+            document.onkeydown = function(event){
+                event = event || window.event;
+                //判断y键是否被按下
+                if(event.keyCode == 89){
+                    console.log('y is down');
+                }
+                //判断y和ctrl是否同时按下
+                if(event.keyCode == 89 && event.ctrlKey){
+                    console.log('two is down');
+                }
+                // console.log(event.keyCode);
+                console.log("down");
+            }
+            document.onkeyup = function(){
+                console.log("up");
+            }
+
+            //获取input
+            var input = document.getElementsByTagName("input")[0];
+            input.onkeydown = function(event){
+                console.log(1);
+                event = event || window.event;
+                //使文本框不能输入数字
+                if(event.keyCode <= 57 && event.keyCode >= 48){
+                    return false;
+                }
+            };
+        };
+    </script>
+</head>
+<body>
+    <input type="text">
+    <div id="box1" style="width: 100px; height: 100px; background-color: beige;"></div>
+</body>
+</html>

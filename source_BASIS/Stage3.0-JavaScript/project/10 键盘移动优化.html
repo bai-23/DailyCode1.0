@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #box1{
+            width: 500px;
+            height: 500px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            position: absolute;
+            background-image: url(./img/22.jpg);
+            /* position如果是relative，会出现向上、左移的速度明显比右、下方向慢的问题 */
+        }
+    </style>
+    <script>
+        window.onload = function(){
+            var speed = 10;
+            //键盘上下左右
+            var dir = 0;
+            //定时器
+            setInterval(function(){
+
+            switch(dir){
+                case 37:
+                    box1.style.left = box1.offsetLeft - speed + 'px';
+                    break;
+                case 39:
+                    box1.style.left = box1.offsetLeft + speed + 'px'; 
+                    break;
+                case 38:
+                    box1.style.top = box1.offsetTop - speed + 'px'; 
+                    break;
+                case 40:
+                    box1.style.top = box1.offsetTop + speed + 'px'; 
+                    break;
+            }
+            }, 30);
+
+            document.onkeydown = function(event){
+            event = event || window.event;
+            if (event.ctrlKey){
+                speed = 100;
+            }else{
+                speed = 10;
+            }
+            dir = event.keyCode;
+            };
+            document.onkeyup = function(){
+            dir = 0;
+            }
+        };
+    
+
+    </script>
+</head>
+<body>
+    <div id="box1"></div>
+</body>
+
+</html>
