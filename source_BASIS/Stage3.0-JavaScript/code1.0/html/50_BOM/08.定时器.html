@@ -54,15 +54,30 @@
 						
 						//将新值设置给box1
 						box1.style.left = newValue + "px";
-						
 						//当元素移动到800px时，使其停止执行动画
 						if(newValue == 800){
 							//达到目标，关闭定时器
 							clearInterval(timer);
+							// 回弹
+							timer1 = setInterval(function(){
+								var oldValue1 = parseInt(getStyle(box1,"left"));
+								var newValue1 = oldValue1 - 1;
+								box1.style.left = newValue1 + "px";
+								if(newValue1 < 1){
+									newValue = 1;
+								}
+								if(newValue1 == 1){
+									clearInterval(timer1);
+								}
+							},1);
 						}
+
+							
 						
 						
-					},30);
+						
+						
+					},3);
 					
 					
 				};

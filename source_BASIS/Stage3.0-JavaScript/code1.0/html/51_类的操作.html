@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .b1{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+        }
+        .b2{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(255, 253, 127);
+        }
+    </style>
+    <script>
+        window.onload = function(){
+            var box1 = document.getElementById('box1');
+            var btn1 = document.getElementById('btn1');
+
+            //为btn1绑定单击响应函数
+            btn1.onclick = function(){
+                //每修改一次样式，浏览器就要重新渲染一次页面，影响性能；且修改多个样式很不方便
+                box1.style.width = '200px';
+                //希望一行代码可同时修改多个样式
+                //解决方法：修改box的class属性
+                // box1.className = "b2";
+                addClass(box1, "b2");
+
+                // alert(hasClass(box1, "b2"));
+                rmClass(box1, "b1");
+            };
+        };
+
+        //定义一个函数，用来向一个元素中添加指定的class属性值
+        //参数：obj（元素），cn（要添加的class值）
+        function addClass(obj, cn){
+            //检查obj中是否含有cn
+            if(!hasClass(obj, cn)){
+                obj.className += " "+cn;
+            }          
+        }
+        //判断一个元素是否含有指定class属性值
+        function hasClass(obj, cn){
+            //判断obj中是否含有cn类
+            //创建正则表达式
+            // var reg = /\bb2\b/;
+            var reg = new RegExp("\\b"+cn+"\\b");
+            return reg.test(obj.className);
+        }
+        //删除元素中指定的class属性
+        function rmClass(obj, cn){
+            //创建一个正则表达式
+            var reg = new RegExp("\\b"+cn+"\\b");
+            //删除cn
+            obj.className = obj.className.replace(reg, "");
+        }
+        //切换类：如果元素中有该类，则删除；如果没有该类，则添加
+        function toggleClass(obj, cn){
+            if(hasClass(obj, cn)){
+                rmClass(obj, cn);
+            }else{
+                addClass(obj, cn);
+            }
+        }
+</script>
+</head>
+<body>
+    <button id="btn1">点击按钮修改box的样式</button>
+    <br/>
+    <br>
+    <div id="box1" class="b1"></div>
+</body>
+</html>

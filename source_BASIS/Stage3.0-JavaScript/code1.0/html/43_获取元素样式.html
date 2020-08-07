@@ -31,7 +31,7 @@
         function getsyle(obj, stylename){ 
             if(window.getComputedStyle){
                 //正常浏览器
-                return getComputedStyle(obj, null)[stylename];
+                return parseInt(getComputedStyle(obj, null)[stylename]);
             }else{
                 //ie8
                 return obj.currentStyle[stylename];
