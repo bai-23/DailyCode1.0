@@ -17,6 +17,7 @@
   //遍历加监听
   /*
   for (var i = 0,length=btns.length; i < length; i++) {
+    //btn是伪数组，每次循环都会重新计算length
     var btn = btns[i]
     btn.onclick = function () {
       alert('第'+(i+1)+'个')
