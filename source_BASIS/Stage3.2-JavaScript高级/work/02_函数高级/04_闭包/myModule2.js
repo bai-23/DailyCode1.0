@@ -1,3 +1,4 @@
+//匿名函数自调用
 (function () {
   //私有数据
   var msg = 'My atguigu'

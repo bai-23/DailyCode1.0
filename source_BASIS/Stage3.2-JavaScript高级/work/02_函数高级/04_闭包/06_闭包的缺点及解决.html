@@ -15,7 +15,7 @@
 -->
 <script type="text/javascript">
   function fn1() {
-    var arr = new Array[100000]
+    var arr = new Array(100000)
     function fn2() {
       console.log(arr.length)
     }
@@ -23,8 +23,8 @@
   }
   var f = fn1()
   f()
-
-  f = null //让内部函数成为垃圾对象-->回收闭包
+  // fn1()()
+  // f = null //让内部函数成为垃圾对象-->回收闭包
 </script>
 </body>
 </html>

@@ -18,7 +18,8 @@
 -->
 
 <input type="text" placeholder="数值" id="number">
-<button id="btn">计算</button>
+<button id="btn">计算</button><br>
+<input type="text" id="res">
 <script type="text/javascript">
   // 1 1 2 3 5 8    f(n) = f(n-1) + f(n-2)
   function fibonacci(n) {
@@ -26,10 +27,16 @@
   }
   // console.log(fibonacci(7))
   var input = document.getElementById('number')
+  var res = document.getElementById('res')
   document.getElementById('btn').onclick = function () {
+    var start = Date.now()
     var number = input.value
     var result = fibonacci(number)
-    alert(result)
+    // alert(result)
+    var end = Date.now()
+    var x = end-start
+    res.value = "第"+number+"位结果为"+result+"，耗时"+x/1000+"s"
+
   }
 
 </script>

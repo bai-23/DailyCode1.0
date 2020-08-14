@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./Bs/css/bootstrap.css">
+    <script src="Bs/js/jquery.min.js" ></script>
+    <script src="Bs/js/bootstrap.js" ></script>
+    <style>
+        img{
+            width: 200px;
+            background: #ba4949;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-header">Bootstrap框架</h1>
+        <img src="./img/2.jpg" class="img-rounded">
+        <img src="./img/2.jpg" class="img-circle">
+        <img src="./img/2.jpg" class="img-thumbnail">
+
+<!--        辅助类-->
+        <p class="text-primary">ssss</p>
+        <p class="text-info">ssss &times;</p>
+
+        <h2 class="bg-success">linux <span class="close">&times;</span></h2>
+        <button class="bg-success">更多 <span class="caret"></span></button>
+
+    </div>
+    <script type="text/javascript">
+        $('.close').click(function () {
+            $(this).parent().hide();
+        })
+    </script>
+</body>
+</html>

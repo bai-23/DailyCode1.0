@@ -13,5 +13,6 @@ function myModule() {
   return {
     doSomething: doSomething,
     doOtherthing: doOtherthing
+    //字符串：函数名
   }
 }
