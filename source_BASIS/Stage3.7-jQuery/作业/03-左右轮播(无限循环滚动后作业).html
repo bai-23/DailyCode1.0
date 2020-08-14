@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03-左右轮播(无限循环滚动后作业)</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 300px;
+            height: 161px;
+            border: 1px solid #000;
+            margin: 100px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .box ul{
+            width: 500%;
+            height: 100%;
+            background-color: red;
+        }
+        .box ul li{
+            list-style: none;
+            width: 20%;
+            height: 100%;
+            float: left;
+        }
+        .box p{
+            width: 100%;
+            height: 40px;
+            /*background-color: blue;*/
+            position: absolute;
+            top: 50%;
+            margin-top: -20px;
+        }
+        .box p span{
+            display: inline-block;
+            width: 30px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            line-height: 40px;
+            font-size: 30px;
+            color: #fff;
+            float: left;
+        }
+        .box p span:last-child{
+            float: right;
+        }
+    </style>
+    <script src="../jQuery基础/js/jquery-3.1.1.js"></script>
+    <script>
+        $(function () {
+            /*完成自动播放*/
+//            0.将第一张图片赋值一份放到最后
+            var li = $('ul>li:first').clone(true);
+            $('ul').append(li);
+//            1.定义变量记录当前是第几张图片
+            var current_index = 0;
+//            2.获取图片的总数
+            var total = ('ul>li').length;
+            var timer = null;
+
+            function play(isRight) {
+                if (isRight){
+//                3.0每次执行累加当前索引
+                    current_index++;
+//                3.1判断是否是最后一张图片
+                    if(current_index == total){
+//                    3.1.1回到第一张图片
+                        $('ul').css({
+                            marginLeft: 0
+                        });
+//                    3.1.2设置当前索引为1
+                        current_index = 1;
+                    }
+//              3.2.执行动画
+                    $('ul').stop().animate({
+                        marginLeft: (-current_index * 100) + '%'
+                    });
+                }else{
+// 递减索引值
+                    current_index --;
+                    // 判断是否是第一张
+                    if(current_index < 0){
+                        // 移动到最后一张
+                        $('ul').css({
+                            marginLeft: (-(total-1) * 100) + '%'
+                        });
+                        // 设置当前索引
+                        current_index = total-2;
+                    }
+                    // 移动到上一张
+                    $('ul').stop().animate({
+                        marginLeft: (-current_index * 100) + '%'
+                    });
+                }
+            }
+            function auto_play() {
+//            3.开始定时器自动播放
+                timer = setInterval(function () {
+                    play(true);
+                }, 1000);
+            }
+//            1.开始播放动画
+            auto_play();
+
+            /*完成鼠标移入停止播放*/
+            $('.box').hover(function () {
+                clearInterval(timer);
+            }, function () {
+                auto_play();
+            });
+
+            /*监听右边按钮点击*/
+            $('span').eq(1).click(function () {
+                play(true);
+            });
+            /*监听左边按钮点击*/
+            $('span').eq(0).click(function () {
+                play(false);
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="box">
+    <ul>
+        <li><img src="../jQuery基础/images/a.jpg" alt=""></li>
+        <li><img src="../jQuery基础/images/b.jpg" alt=""></li>
+        <li><img src="../jQuery基础/images/c.jpg" alt=""></li>
+        <li><img src="../jQuery基础/images/d.jpg" alt=""></li>
+    </ul>
+    <p>
+        <span>&lt;</span>
+        <span>&gt;</span>
+    </p>
+</div>
+</body>
+</html>

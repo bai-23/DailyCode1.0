@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02-京东楼层效果(自定义动画后作业)</title>
+    <style>
+        *{
+            margin: 0;
+            border: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .main{
+            width: 1210px;
+            margin: auto;
+        }
+        .main img{
+            display: block;
+        }
+        .main .floor{
+            margin-bottom: 10px;
+        }
+        .aside{
+            width: 30px;
+            position: fixed;
+            top: 25%;
+            left: 10px;
+            display: none;
+        }
+        ul>li{
+            list-style: none;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border-bottom: 1px dashed red;
+            cursor: pointer;
+        }
+        ul>li:hover{
+            background: pink;
+        }
+        ul>.cur{
+            background: pink;
+        }
+    </style>
+    <script src="../jQuery基础/js/jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+            // 1.监听楼层点击事件
+            $("li").click(function () {
+                // 1.0设置当前点击楼层背景颜色
+                $(this).addClass("cur").siblings().removeClass("cur");
+                // 1.1.获取当前点击的楼层索引
+                var index = $(this).index();
+                // 1.2获取索引对应楼层距离顶部的距离
+                var offset = $(".floor").eq(index).offset().top;
+                // 1.3让网页滚动到对应楼层的位置
+                $("html,body").animate({scrollTop: offset}, 1000);
+            });
+            // 2.监听网页滚动事件
+            $(window).scroll(function () {
+                // 2.1获取网页滚动的距离
+                var $winOffset = $(window).scrollTop();
+
+                // 获取网页高度
+                var $winHeight = $(window).height();
+                // 判断是否滚出一屏
+                if($winOffset >= $winHeight){
+                    $(".aside").stop().fadeIn(500);
+                }else{
+                    $(".aside").stop().fadeOut(500);
+                }
+
+                // 2.2遍历拿所有楼层
+                $(".floor").each(function (idx, ele) {
+                    // 2.2.1获得当前楼层距离顶部距离
+                    var $floorOffset = $(ele).offset().top;
+                    // 2.2.2获取当前楼层高度
+                    var $floorHeight = $(ele).height();
+
+                    // 2.2.3判断滚动出去的距离是否大于当前楼层
+                    if($winOffset >= $floorOffset){
+                        // 获取对应楼层按钮
+                        var $li = $("li").eq(idx);
+                        // 自动设置楼层按钮背景为当前楼层
+                        $li.addClass("cur").siblings().removeClass("cur");
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="main">
+    <img src="../jQuery基础/images/jd/01.png" alt="" />
+    <img class="floor" src="../jQuery基础/images/jd/02.png" alt="" />
+    <img class="floor" src="../jQuery基础/images/jd/03.png" alt="" />
+    <img src="../jQuery基础/images/jd/04.png" alt="" />
+    <img class="floor" src="../jQuery基础/images/jd/05.png" alt="" />
+    <img class="floor" src="../jQuery基础/images/jd/06.png" alt="" />
+    <img class="floor" src="../jQuery基础/images/jd/07.png" alt="" />
+    <img src="../jQuery基础/images/jd/08.png" alt="" />
+    <img class="floor" src="../jQuery基础/images/jd/09.png" alt="" />
+    <img class="floor" src="../jQuery基础/images/jd/10.png" alt="" />
+    <img class="floor" src="../jQuery基础/images/jd/11.png" alt="" />
+    <img class="floor" src="../jQuery基础/images/jd/12.png" alt="" />
+    <img src="../jQuery基础/images/jd/13.png" alt="" />
+    <img class="floor" src="../jQuery基础/images/jd/14.png" alt="" />
+    <img class="floor" src="../jQuery基础/images/jd/15.png" alt="" />
+    <img class="floor" src="../jQuery基础/images/jd/16.png" alt="" />
+    <img src="../jQuery基础/images/jd/17.png" alt="" />
+<div class="aside">
+    <ul>
+        <li class="cur">1F</li>
+        <li>2F</li>
+        <li>3F</li>
+        <li>4F</li>
+        <li>5F</li>
+        <li>6F</li>
+        <li>7F</li>
+        <li>8F</li>
+        <li>9F</li>
+        <li>10F</li>
+        <li>11F</li>
+        <li>12F</li>
+    </ul>
+</div>
+</body>
+</html>

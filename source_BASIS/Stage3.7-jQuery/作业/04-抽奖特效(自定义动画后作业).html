@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04-抽奖特效(自定义动画后作业)</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 450px;
+            height: 450px;
+            /*border: 1px solid #000;*/
+            margin: 100px auto 0 auto;
+        }
+        div>img{
+            float: left;
+            width: 150px;
+            height: 150px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+        div>.cur{
+            padding: 5px;
+            background: red;
+        }
+        p{
+            width: 450px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border: 1px solid #000;
+            background: red;
+            margin: 10px auto;
+        }
+    </style>
+    <script src="../jQuery基础/js/jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+            // 1.设置背景图片
+            $("img").each(function (idx, ele) {
+                // 1.1拼接图片地址
+                var url = "../code/images/luck/0"+(idx+1)+".jpg";
+                // 2.将图片地址设置给img
+                $(ele).attr("src", url);
+            });
+            var goods = {
+                '0':'iPhone手机',
+                '1':'程序员鼓励师',
+                '2':'红牛耳机',
+                '3':'iWatch',
+                '4':'感谢参与',
+                '5':'MacBook',
+                '6':'布娃娃',
+                '7':'机械键盘',
+                '8':'江哥约会1次'
+            };
+            // 2.实现抽奖动画
+            $("p").click(function () {
+                // 2.-1生成动画执行次数
+                var total = parseInt(Math.random() * 10) + 9;
+
+                // 2.0定义变量当做动画索引
+                var index = 0;
+                // 2.1开启定时器
+                var timer = setInterval(function () {
+                    // 判断是否是最后一个
+                    if(index == 9){
+                        index = 0;
+                    }
+                    // 2.2依次设置每个img的样式为cur
+                    $("img").eq(index).addClass("cur");
+                    // 2.3清除其它img的样式
+                    $("img").eq(index).siblings().removeClass("cur");
+                    // 2.4让索引递增
+                    index++;
+                    // 2.5让执行次数递减
+                    total--;
+                    console.log(total);
+                    // 2.6判断是否需要停止动画
+                    if(total == 0){
+                        // 2.7关闭定时器
+                        clearInterval(timer);
+                        // 2.8中奖动画
+                        $("img").eq(index-1).fadeOut(500).fadeIn(500);
+                        // 2.9弹出中奖结果
+                        console.log(goods[index - 1]);
+                    }
+                }, 50);
+
+            });
+        });
+    </script>
+</head>
+<body>
+<div>
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+</div>
+<p>开始抽奖</p>
+</body>
+</html>

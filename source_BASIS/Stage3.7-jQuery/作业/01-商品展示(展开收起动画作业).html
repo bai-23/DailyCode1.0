@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01-商品展示(展开收起动画作业)</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 360px;
+            border: 1px solid #000;
+            margin: 100px auto;
+        }
+        .box ul{
+            overflow: hidden;
+        }
+        .box ul li{
+            list-style: none;
+            float: left;
+            width: 120px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+        }
+        .box p{
+            width: 120px;
+            line-height: 30px;
+            text-align: center;
+            border: 1px solid #000;
+            margin: 0 auto;
+        }
+    </style>
+    <script src="../jQuery基础/js/jquery-3.1.1.js"></script>
+    <script>
+        $(function () {
+//              $('li:gt(2):not(:last)').hide();
+//            注意: 如果gt和lt同时存在, 后面一个是以前面一个的结束位置的下一个作为0角标
+            $('li:gt(2):lt(9)').hide();
+
+            $('p').click(function () {
+//                直接切换即可
+                $('li:gt(2):lt(9)').slideToggle();
+
+//                判断修改文字内容
+                if ($(this).text() == '显示所有内容'){
+                    $(this).text('隐藏所有内容');
+//                    $('li:gt(2):lt(9)').slideDown();
+                }else{
+                    $(this).text('显示所有内容');
+//                    $('li:gt(2):lt(9)').slideUp();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="box">
+    <ul>
+        <li>佳能</li>
+        <li>索尼</li>
+        <li>三星</li>
+        <li>尼康</li>
+        <li>松下</li>
+        <li>卡西欧</li>
+        <li>富士</li>
+        <li>可达</li>
+        <li>宾得</li>
+        <li>理光</li>
+        <li>奥林巴斯</li>
+        <li>明基</li>
+        <li>显示其它品牌</li>
+    </ul>
+    <p>显示所有内容</p>
+</div>
+</body>
+</html>
