@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./Bs/css/bootstrap.css">
+    <script src="Bs/js/jquery.min.js" ></script>
+    <script src="Bs/js/bootstrap.js" ></script>
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <style>
+        .row{
+            padding: 15px 15px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-header">Bootstrap框架</h1>
+
+<!--        导航-->
+        <ul class="nav nav-pills">
+            <li class="active">
+                <a href="">linux</a>
+            </li>
+            <li class="">
+                <a href="">php</a>
+            </li>
+            <li class="">
+                <a href="">java</a>
+            </li>
+
+        </ul>
+
+        <div class="row">
+            <p>linux is oclinux is oclinux is oclinux is oclinux is oclinux is oclinux is oc
+            linux is oclinux is oclinux is oclinux is oclinux is oclinux is oclinux is oc
+            linux is oclinux is oclinux is oclinux is oclinux is oclinux is oclinux is oc
+            linux is oclinux is oclinux is oclinux is oclinux is oclinux is oclinux is oc
+            linux is oclinux is oclinux is oclinux is oclinux is oclinux is oclinux is oc
+            </p>
+        </div>
+        <div class="row">
+            <p>php is oclinux is oclinux is oclinux is oclinux is oclinux is oclinux is oc
+            linux is oclinux is oclinux is oclinux is oclinux is oclinux is oclinux is oc
+            linux is oclinux is oclinux is oclinux is oclinux is oclinux is oclinux is oc
+            linux is oclinux is oclinux is oclinux is oclinux is oclinux is oclinux is oc
+            linux is oclinux is oclinux is oclinux is oclinux is oclinux is oclinux is oc
+            </p>
+        </div>
+        <div class="row">
+            <p >java is oclinux is oclinux is oclinux is oclinux is oclinux is oclinux is oc
+            linux is oclinux is oclinux is oclinux is oclinux is oclinux is oclinux is oc
+            linux is oclinux is oclinux is oclinux is oclinux is oclinux is oclinux is oc
+            linux is oclinux is oclinux is oclinux is oclinux is oclinux is oclinux is oc
+            linux is oclinux is oclinux is oclinux is oclinux is oclinux is oclinux is oc
+            </p>
+        </div>
+
+    </div>
+    <script type="text/javascript">
+      $('li').mouseenter(function () {
+        $(this).addClass('active');
+        $('li').not($(this)).removeClass('active');
+
+        idx = $(this).index('li');
+        $('.row').eq(idx).show();
+        $('.row').not($('.row').eq(idx).hide());
+      });
+
+      $('.row').eq(0).show()
+    </script>
+</body>
+</html>

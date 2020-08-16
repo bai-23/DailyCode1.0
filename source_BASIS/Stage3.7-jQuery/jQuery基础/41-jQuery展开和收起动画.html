@@ -21,17 +21,18 @@
             // 编写jQuery相关代码
         $("button").eq(0).click(function () {
             $("div").slideDown(1000, function () {
-                alert("展开完毕");
+                // alert("展开完毕");
+                $('div').css('background', '#bfa')
             });
         });
         $("button").eq(1).click(function () {
             $("div").slideUp(1000, function () {
-                alert("收起完毕");
+                // alert("收起完毕");
             });
         });
         $("button").eq(2).click(function () {
             $("div").slideToggle(1000, function () {
-                alert("收起完毕");
+                // alert("收起完毕");
             });
         });
         });

@@ -28,12 +28,16 @@
                     width: 500
                 }, 1000, function () {
                     alert("自定义动画执行完毕");
+
                 });
                 */
                 $(".one").animate({
                     marginLeft: 500
-                }, 5000, function () {
+                }, 1000, function () {
                     // alert("自定义动画执行完毕");
+                    $(".one").animate({
+                        marginLeft: 0
+                    }, 1000, function () {});
                 });
                 /*
                 第一个参数: 接收一个对象, 可以在对象中修改属性
@@ -43,7 +47,7 @@
                 */
                 $(".two").animate({
                     marginLeft: 500
-                }, 5000, "linear", function () {
+                }, 1000, "linear", function () {
                     // alert("自定义动画执行完毕");
                 });
             })
@@ -51,7 +55,7 @@
                 $(".one").animate({
                     width: "+=100"
                 }, 1000, function () {
-                    alert("自定义动画执行完毕");
+                    // alert("自定义动画执行完毕");
                 });
             });
             $("button").eq(2).click(function () {
@@ -59,7 +63,7 @@
                     // width: "hide"
                     width: "toggle"
                 }, 1000, function () {
-                    alert("自定义动画执行完毕");
+                    // alert("自定义动画执行完毕");
                 });
             })
         });

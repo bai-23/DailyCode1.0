@@ -21,6 +21,9 @@
             height: 161px;
             background: #000;
         }
+        ul>li>img{
+            opacity: 70%;
+        }
         ul>li{
             float: left;
         }
@@ -50,6 +53,7 @@
                 // 给非当前选中添加蒙版
                 $(this).siblings().fadeTo(100, 0.5);
                 // 去除当前选中的蒙版
+                // $(this).stop(true)
                 $(this).fadeTo(100, 1);
             }, function () {
                 // 继续滚动
@@ -63,12 +67,12 @@
 <body>
 <div>
     <ul>
-        <li><img src="images/a.jpg" alt=""></li>
-        <li><img src="images/b.jpg" alt=""></li>
-        <li><img src="images/c.jpg" alt=""></li>
-        <li><img src="images/d.jpg" alt=""></li>
-        <li><img src="images/a.jpg" alt=""></li>
-        <li><img src="images/b.jpg" alt=""></li>
+        <li><img src="../images/a.jpg" alt=""></li>
+        <li><img src="../images/b.jpg" alt=""></li>
+        <li><img src="../images/c.jpg" alt=""></li>
+        <li><img src="../images/d.jpg" alt=""></li>
+        <li><img src="../images/a.jpg" alt=""></li>
+        <li><img src="../images/b.jpg" alt=""></li>
     </ul>
 </div>
 </body>

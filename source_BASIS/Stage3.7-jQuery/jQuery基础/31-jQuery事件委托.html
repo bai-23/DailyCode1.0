@@ -17,9 +17,9 @@
             /*
             在jQuery中,如果通过核心函数找到的元素不止一个, 那么在添加事件的时候,jQuery会遍历所有找到的元素,给所有找到的元素添加事件
             */
-            // $("ul>li").click(function () {
-            //     console.log($(this).html());
-            // });
+            $("ul>li").click(function () {
+                console.log($(this).html());
+            });
             /*
             以下代码的含义, 让ul帮li监听click事件
             之所以能够监听, 是因为入口函数执行的时候ul就已经存在了, 所以能够添加事件

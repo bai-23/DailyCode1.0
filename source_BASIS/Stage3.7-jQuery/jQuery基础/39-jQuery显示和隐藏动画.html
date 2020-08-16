@@ -19,23 +19,24 @@
     <script>
         $(function () {
             // 编写jQuery相关代码
+
             $("button").eq(0).click(function () {
                 // $("div").css("display", "block");
                 // 注意: 这里的时间是毫秒
                 $("div").show(1000, function () {
                     // 作用: 动画执行完毕之后调用
-                    alert("显示动画执行完毕");
+                    // alert("显示动画执行完毕");
                 });
             });
             $("button").eq(1).click(function () {
                 // $("div").css("display", "none");
                 $("div").hide(1000, function () {
-                    alert("隐藏动画执行完毕");
+                    // alert("隐藏动画执行完毕");
                 });
             });
             $("button").eq(2).click(function () {
                 $("div").toggle(1000, function () {
-                    alert("切换动画执行完毕");
+                    // alert("切换动画执行完毕");
                 });
             });
         });

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<link rel="stylesheet" href="bs/css/bootstrap.css">
+	<script src="bs/js/jquery.min.js"></script>
+	<script src="bs/js/bootstrap.js"></script>
+	<script src="bs/js/holder.min.js"></script>
+	<style>
+		*{
+			font-family: 微软雅黑;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class='page-header'>Boostrap前端框架</h1>
+
+		<table class='table table-bordered'>
+			<tr class='success'>
+				<th>ID</th>
+				<th>用户名</th>
+				<th>密码</th>
+			</tr>
+			<tr class='active'>
+				<td>001</td>
+				<td>002</td>
+				<td>003</td>
+			</tr>
+			<tr class='info'>
+				<td>001</td>
+				<td>002</td>
+				<td>003</td>
+			</tr>
+			<tr class='warning'>
+				<td>001</td>
+				<td>002</td>
+				<td>003</td>
+			</tr>
+			<tr class='danger'>
+				<td>001</td>
+				<td>002</td>
+				<td>003</td>
+			</tr>
+			<tr>
+				<td>001</td>
+				<td>002</td>
+				<td>003</td>
+			</tr>
+			<tr>
+				<td>001</td>
+				<td>002</td>
+				<td>003</td>
+			</tr>
+			<tr>
+				<td>001</td>
+				<td>002</td>
+				<td>003</td>
+			</tr>
+			<tr>
+				<td>001</td>
+				<td>002</td>
+				<td>003</td>
+			</tr>
+			<tr>
+				<td>001</td>
+				<td>002</td>
+				<td>003</td>
+			</tr>
+			<tr>
+				<td>001</td>
+				<td>002</td>
+				<td>003</td>
+			</tr>
+			<tr>
+				<td>001</td>
+				<td>002</td>
+				<td>003</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

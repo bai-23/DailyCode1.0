@@ -67,14 +67,18 @@
                 $(this).addClass("current");
                 // 1.2还原其它兄弟选项卡的背景颜色
                 $(this).siblings().removeClass("current");
+
                 // 1.3获取当前移出选项卡的索引
                 var index = $(this).index();
                 // 1.4根据索引找到对应的图片
                 var $li = $(".content>li").eq(index);
+
                 // 1.5隐藏非当前的其它图片
                 $li.siblings().removeClass("show");
                 // 1.6显示对应的图片
                 $li.addClass("show");
+
+                //$(this).addClass("current").$(this).siblings().removeClass("current").index = $(this).index().$li = $(".content>li").eq(index).$li.siblings().removeClass("show").$li.addClass("show")
             });
         });
     </script>

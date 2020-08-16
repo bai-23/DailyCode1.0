@@ -29,20 +29,19 @@
             3.什么是默认行为?
             4.如何阻止默认行为
             */
-            /*
             $(".son").click(function (event) {
                 alert("son");
                 // return false;
                 event.stopPropagation();
+                // event.cancelBubble = false   不行？
             });
             $(".father").click(function () {
                 alert("father");
             });
-            */
             $("a").click(function (event) {
                 alert("弹出注册框");
-                // return false;
-                event.preventDefault();
+                return false;
+                // event.preventDefault();
             });
         });
     </script>
