@@ -15,7 +15,7 @@
             */
             $("button").eq(0).click(function () {
                 // 1.浅复制一个元素
-                var $li = $("li:first").clone(false);
+                var $li = $("li>p:first-child").clone(false);
                 // 2.将复制的元素添加到ul中
                 $("ul").append($li);
             });
@@ -36,7 +36,11 @@
 <button>浅复制节点</button>
 <button>深复制节点</button>
 <ul>
-    <li>我是第1个li</li>
+    <li>我是第1个li
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+    </li>
     <li>我是第2个li</li>
     <li>我是第3个li</li>
     <li>我是第4个li</li>

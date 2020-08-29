@@ -18,14 +18,14 @@
            IE9以下的浏览器undefined可以被修改, 为了保证内部使用的undefined不被修改, 所以需要接收一个正确的undefined
         */
         (function( window, undefined ) {
-            var jQuery = function( ) {
-                return new jQuery.prototype.init( );
+            var njQuery = function( ) {
+                return new njQuery.prototype.init( );
             }
-            jQuery.prototype = {
-                constructor: jQuery
+            njQuery.prototype = {
+                constructor: njQuery
             }
-            jQuery.prototype.init.prototype = jQuery.prototype;
-            window.jQuery = window.$ = jQuery;
+            njQuery.prototype.init.prototype = njQuery.prototype;
+            window.njQuery = window.$ = njQuery;
         })( window );
 
 

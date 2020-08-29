@@ -85,7 +85,7 @@ $(function () {
             top:arrPos[posIndex].top
         });
         // 随机获取数组类型
-        var wolfType = Math.round(Math.random()) == 0 ? wolf_1 : wolf_2;
+        var wolfType = Math.round(Math.random()) === 0 ? wolf_1 : wolf_2;
         // 5.设置图片的内容
         window.wolfIndex = 0;
         window.wolfIndexEnd = 5;

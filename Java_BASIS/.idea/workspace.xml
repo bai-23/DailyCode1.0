@@ -25,10 +25,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30b427ad-b321-4d7a-b222-3a7fc0e6ac20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/code/m30_人类.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/m31_丈夫和妻子.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/m32_银行取款练习.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../source_BASIS/A前端/03-Bootsrap.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/../source_BASIS/A前端/03-Bootsrap.xmind" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../source_BASIS/A前端/06-jQuery.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/../source_BASIS/A前端/06-jQuery.xmind" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../source_BASIS/Stage3.7-jQuery/jQuery原理/01-jQuery的基本结构.html" beforeDir="false" afterPath="$PROJECT_DIR$/../source_BASIS/Stage3.7-jQuery/jQuery原理/01-jQuery的基本结构.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../source_BASIS/Stage3.7-jQuery/jQuery原理/02-jQuery入口函数测试.html" beforeDir="false" afterPath="$PROJECT_DIR$/../source_BASIS/Stage3.7-jQuery/jQuery原理/02-jQuery入口函数测试.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../source_BASIS/Stage3.7-jQuery/jQuery原理/03-apply和call方法.html" beforeDir="false" afterPath="$PROJECT_DIR$/../source_BASIS/Stage3.7-jQuery/jQuery原理/03-apply和call方法.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../source_BASIS/Stage3.7-jQuery/jQuery原理/05-jQuery监听DOM加载.html" beforeDir="false" afterPath="$PROJECT_DIR$/../source_BASIS/Stage3.7-jQuery/jQuery原理/05-jQuery监听DOM加载.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../source_BASIS/Stage3.7-jQuery/jQuery原理/06-jQuery原型上的属性和方法.html" beforeDir="false" afterPath="$PROJECT_DIR$/../source_BASIS/Stage3.7-jQuery/jQuery原理/06-jQuery原型上的属性和方法.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../source_BASIS/Stage3.7-jQuery/jQuery原理/07-jQueryDOM操作相关方法.html" beforeDir="false" afterPath="$PROJECT_DIR$/../source_BASIS/Stage3.7-jQuery/jQuery原理/07-jQueryDOM操作相关方法.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../source_BASIS/Stage3.7-jQuery/jQuery原理/js/njQuery-1.0.0.js" beforeDir="false" afterPath="$PROJECT_DIR$/../source_BASIS/Stage3.7-jQuery/jQuery原理/js/njQuery-1.0.0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../source_BASIS/Stage3.7-jQuery/jQuery基础/51-jQuery添加节点相关方法.html" beforeDir="false" afterPath="$PROJECT_DIR$/../source_BASIS/Stage3.7-jQuery/jQuery基础/51-jQuery添加节点相关方法.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../source_BASIS/Stage3.7-jQuery/jQuery基础/52-jQuery删除节点相关方法.html" beforeDir="false" afterPath="$PROJECT_DIR$/../source_BASIS/Stage3.7-jQuery/jQuery基础/52-jQuery删除节点相关方法.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../source_BASIS/Stage3.7-jQuery/jQuery基础/54-jQuery复制节点相关方法.html" beforeDir="false" afterPath="$PROJECT_DIR$/../source_BASIS/Stage3.7-jQuery/jQuery基础/54-jQuery复制节点相关方法.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../source_BASIS/Stage3.7-jQuery/jQuery基础/56-狂拍灰太狼/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../source_BASIS/Stage3.7-jQuery/jQuery基础/56-狂拍灰太狼/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../source_BASIS/Stage3.7-jQuery/jQuery基础/56-狂拍灰太狼/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../source_BASIS/Stage3.7-jQuery/jQuery基础/56-狂拍灰太狼/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../source_BASIS/Stage3.7-jQuery/jQuery基础/56-狂拍灰太狼/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../source_BASIS/Stage3.7-jQuery/jQuery基础/56-狂拍灰太狼/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../source_BASIS/Stage3.8-Ajax/Ajax/01-PHP-BASE.php" beforeDir="false" afterPath="$PROJECT_DIR$/../source_BASIS/Stage3.8-Ajax/Ajax/01-PHP-BASE.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../source_BASIS/Stage3.8-Ajax/Ajax/02-get-post.php" beforeDir="false" afterPath="$PROJECT_DIR$/../source_BASIS/Stage3.8-Ajax/Ajax/02-get-post.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +79,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../source_BASIS/Stage3.8-Ajax" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -189,6 +202,7 @@
       <workItem from="1596158267918" duration="7182000" />
       <workItem from="1596676644379" duration="8400000" />
       <workItem from="1596762256827" duration="5463000" />
+      <workItem from="1597894008145" duration="55000" />
     </task>
     <servers />
   </component>
@@ -264,10 +278,11 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="428" y="332" key="DetectedRootsChooserDialog/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1595470578391" />
-    <state x="733" y="214" key="FileChooserDialogImpl" timestamp="1595476304634">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="733" y="222" key="FileChooserDialogImpl" timestamp="1597894057055">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="733" y="214" key="FileChooserDialogImpl/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1595476304634" />
+    <state x="733" y="222" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1597894057055" />
     <state width="693" height="142" key="GridCell.Tab.0.bottom" timestamp="1596769673366">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
