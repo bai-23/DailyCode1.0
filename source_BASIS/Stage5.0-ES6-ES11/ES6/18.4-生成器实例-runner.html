@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生成器</title>
+</head>
+<body>
+    <script>
+        function *gen(){
+            alert(1)
+            yield 12
+            alert(2)
+            return 5
+        }
+        let genObj = gen()
+
+        let res1 = genObj.next()
+        console.log(res1)
+        let res2 = genObj.next()
+        console.log(res2) //5
+        //传参
+        genObj.next()
+        genObj.next()
+
+
+    </script>
+</body>
+</html>

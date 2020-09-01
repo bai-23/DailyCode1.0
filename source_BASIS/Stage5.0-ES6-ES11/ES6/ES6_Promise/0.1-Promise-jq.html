@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript" src="./resources/jquery-1.12.4.js"></script>
+<script type="text/javascript">
+
+  Promise.all([
+      $.ajax({url: 'resources/arr.txt',dataType: 'json'}),
+      $.ajax({url: 'resources/json.txt',dataType: 'json'})
+  ]).then(function (result) {
+    let [arr, json] = result
+
+    // alert('yes')
+      console.log(arr, json)
+  }, function (err) {
+    alert('error!!!!')
+  })
+
+//    race
+    Promise.race([
+        $.ajax({url: 'http://www.baidu.com'}),
+        $.ajax({url: 'http://www.baidu.com'}),
+        $.ajax({url: 'http://www.baidu.com'}),
+        $.ajax({url: 'http://www.baidu.com'})
+    ])
+
+
+</script>
+</body>
+</html>

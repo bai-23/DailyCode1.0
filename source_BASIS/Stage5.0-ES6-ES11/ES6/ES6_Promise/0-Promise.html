@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript" src="./resources/jquery-1.12.4.js"></script>
+<script type="text/javascript">
+
+    function creatPromise(url) {
+        return new Promise((resolve, reject) => {
+            $.ajax({
+                url,
+                dataType: 'json',
+                success(arr){
+                    resolve(arr)
+                },
+                error(err){
+                    reject(err)
+                }
+            })
+
+        })
+    }
+
+  // const p = new Promise((resolve, reject) => {
+  //   $.ajax({
+  //       url: './resources/arr.txt',
+  //       dataType: 'json',
+  //       success(arr){
+  //           resolve(arr)
+  //       },
+  //       error(err){
+  //           reject(err)
+  //       }
+  //   })
+  //
+  // })
+  // p.then(function (arr) {
+  //     // alert('成功'+arr)
+  // }, function (err) {
+  //     alert('失败'+err)
+  // })
+
+
+  // const p2 = new Promise((resolve, reject) => {
+  //   $.ajax({
+  //       url: './resources/json.txt',
+  //       dataType: 'json',
+  //       success(json){
+  //           resolve(json)
+  //       },
+  //       error(err){
+  //           reject(err)
+  //       }
+  //   })
+  // })
+
+  Promise.all([
+    // p, p2
+      creatPromise('./resources/arr.txt'),
+      creatPromise('./resources/json.txt')
+  ]).then(function (json) {
+      let [res1, res2] = json
+    alert('全成功了'+json)
+    console.log(res1)
+    console.log(res2)
+  }, function () {
+    alert('至少有一个失败了')
+  })
+
+
+
+</script>
+</body>
+</html>

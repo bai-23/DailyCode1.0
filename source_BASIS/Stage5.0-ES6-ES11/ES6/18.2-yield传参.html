@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生成器</title>
+</head>
+<body>
+    <script>    
+        //生成器其实就是一个特殊的函数
+        //异步编程  纯回调函数  node fs  ajax mongodb
+        //函数代码的分隔符
+        function *gen(){
+            alert(1)
+            let a = yield
+            // yield alert(a);
+            alert(2)
+        }
+        let genObj = gen()
+        //传参
+        genObj.next()//第一个next传不进
+        genObj.next(12)
+        // genObj.next(5)
+        // genObj.next()
+
+    </script>
+</body>
+</html>
