@@ -10,6 +10,7 @@
             var oBtn = document.querySelector("button");
             oBtn.onclick = function (ev1) {
                 var xhr;
+
                 if (window.XMLHttpRequest)
                 {// code for IE7+, Firefox, Chrome, Opera, Safari
                     xhr=new XMLHttpRequest();
@@ -34,6 +35,7 @@
                         if(xhr.status >= 200 && xhr.status < 300 ||
                         xhr.status === 304){
                             // alert("请求成功");
+                            //获取拿到的数据
                             alert(xhr.responseText);
                         }else{
                             alert("请求失败");
