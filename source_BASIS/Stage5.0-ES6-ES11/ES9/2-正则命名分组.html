@@ -10,26 +10,27 @@
 <body>
     <script>
         //声明一个字符串
-        // let str = '<a href="http://www.atguigu.com">尚硅谷</a>';
+        /*let str1 = '<a href="http://www.atguigu.com">尚硅谷</a>';
 
         // //提取 url 与 『标签文本』
-        // const reg = /<a href="(.*)">(.*)<\/a>/;
+        const reg1 = /<a href="(.*)">(.*)<\/a>/;
 
         // //执行
-        // const result = reg.exec(str);
+        const result1 = reg1.exec(str1);
 
-        // console.log(result);
-        // // console.log(result[1]);
+        console.log(result1);
+        console.log(result1[1]);*/
         // // console.log(result[2]);
 
         
         let str = '<a href="http://www.atguigu.com">尚硅谷</a>';
         //分组命名
-        const reg = /<a href="(?<url>.*)">(?<text>.*)<\/a>/;
+        const reg = /<a href="(?<ur>.*)">(?<text>.*)<\/a>/;
 
         const result = reg.exec(str);
 
-        console.log(result.groups.url);
+        console.log(result.groups);
+        console.log(result.groups.ur);
 
         console.log(result.groups.text);
     </script>

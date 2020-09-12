@@ -23,10 +23,10 @@
         }
 
         const result = fn();
-
+        console.log(result)
         //调用 then 方法
         result.then(value => {
-            console.log(value);
+            console.log("这是从resolve拿到的："+value);
         }, reason => {
             console.warn(reason);
         })
