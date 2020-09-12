@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="demo" width="600" height="600">
+    <!--兼容性提示-->
+</canvas>
+
+<script>
+    // 1.获取canvas标签
+    var canvas = document.getElementById('demo')
+    canvas.style.border = "1px solid red"
+    canvas.width = 600
+    canvas.height = 600
+
+    // 2.获取上下文  (API入口)
+    var ctx = canvas.getContext('2d')
+
+    // 3.绘制路径
+    ctx.moveTo(100, 100) // 定位起始画笔坐标（相对原点）
+    ctx.lineTo(200, 100) // 拉出一条直线到（200,100）
+    ctx.lineTo(100, 200) // 拉出直线到 （100,200）
+    // ctx.lineTo(100, 100) // 回到（100， 100）
+    ctx.closePath() //闭合路径
+
+    // 4.填充内容(描边)
+    ctx.fill()
+    ctx.lineWidth = 4
+    ctx.strokeStyle = 'rgba(0, 0, 255, 0.8)'
+    ctx.stroke()
+
+</script>
+</body>
+</html>

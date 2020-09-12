@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <canvas id="cavsElem">
+
+    </canvas>
+    <script>
+        (function () {
+            var canvas = document.querySelector('#cavsElem')
+            var c = canvas.getContext('2d')
+            canvas.width = 600
+            canvas.height = 600
+            canvas.style.border = '1px solid #000'
+
+            // c.rect(100, 100, 50, 50)
+            // c.stroke()
+            // c.strokeRect(100, 100, 50, 50)
+
+            // 绘制从0到30度的弧
+            c.moveTo(100, 100)
+            c.arc(100, 100, 100,0, 30*Math.PI/180, true) //逆时针
+            // c.arc(100, 100, 100,0, 30*Math.PI/180, false)
+            c.fill()
+            c.closePath()
+            c.stroke()
+
+
+        }())
+
+    </script>
+</body>
+</html>

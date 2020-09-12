@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <canvas id="cavsElem">
+
+    </canvas>
+    <script>
+        (function () {
+            var canvas = document.querySelector('#cavsElem')
+            var c = canvas.getContext('2d')
+            canvas.width = 600
+            canvas.height = 600
+            canvas.style.border = '1px solid #000'
+
+            //从-90度开始绘制
+            // c.moveTo(300, 300)
+            // c.fillStyle = 'red'
+            // c.arc(300, 300, 100,-90*Math.PI/180, -30*Math.PI/180)
+            // c.fill()
+            var data = [{
+                "value": .2,
+                "color": "red",
+                "title": "应届生"
+            },{
+                "value": .3,
+                "color": "blue",
+                "title": "社招生"
+            },{
+                "value": .4,
+                "color": "green",
+                "title": "老学员"
+            },{
+                "value": .1,
+                "color": "#ccc",
+                "title": "公开课"
+            }]
+
+            var temp = -90
+            var Xo = 400, Yo = 400 // 圆心
+            var radius = 200 //半径
+            for (var i=0; i<data.length; i++){
+                c.beginPath()
+                c.moveTo(Xo, Yo)
+                var angle = data[i].value * 360 // 权重：扇形角度大小
+
+                c.fillStyle = data[i].color
+
+                var startAng = temp * Math.PI / 180
+                var endAng = (temp+angle) * Math.PI / 180
+                c.arc(Xo, Yo, radius, startAng, endAng)
+                c.fill()
+                temp += angle
+            }
+            
+
+
+
+        }())
+
+    </script>
+</body>
+</html>

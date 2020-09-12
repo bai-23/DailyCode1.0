@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <canvas id="cavsElem">
+
+    </canvas>
+    <script>
+        (function () {
+            var canvas = document.querySelector('#cavsElem')
+            var ctx = canvas.getContext('2d')
+            canvas.width = 600
+            canvas.height = 600
+            canvas.style.border = '1px solid #000'
+
+            // 1.脑壳
+            ctx.beginPath()
+            ctx.moveTo(300, 50)
+            ctx.lineTo(350, 50)
+            ctx.lineTo(350, 100)
+            ctx.lineTo(300, 100)
+            ctx.closePath()
+            ctx.strokeStyle = 'red'
+            ctx.stroke()
+            // 1.1 眼睛
+            ctx.beginPath()
+            // 1.1.1 左眼
+            ctx.moveTo(310, 65)
+            ctx.lineTo(315, 65)
+            // 1.1.2 右眼
+            ctx.moveTo(332, 65)
+            ctx.lineTo(337, 65)
+            ctx.strokeStyle = 'black'
+            ctx.stroke()
+
+            // 2.身体
+            ctx.beginPath()
+            ctx.moveTo(325, 100)
+            ctx.lineTo(350, 170)
+            ctx.strokeStyle = 'red'
+            ctx.stroke()
+            ctx.stroke()
+            // 2.1 左手
+            ctx.beginPath()
+            ctx.moveTo(335, 130)
+            ctx.lineTo(250, 70)
+            ctx.strokeStyle = 'red'
+            ctx.stroke()
+            // 2.2 右手
+            ctx.beginPath()
+            ctx.moveTo(335, 130)
+            ctx.lineTo(400, 100)
+
+            ctx.strokeStyle = 'red'
+            ctx.stroke()
+            // 2.2.1 魔法棒
+            ctx.beginPath()
+            ctx.moveTo(400, 100)
+            ctx.lineWidth = 2
+            ctx.lineTo(430, 50)
+            ctx.strokeStyle = 'black'
+            ctx.stroke()
+            ctx.beginPath()
+            ctx.moveTo(430, 50)
+            ctx.lineTo(450, 20)
+            ctx.lineWidth = 20
+            ctx.strokeStyle = 'black'
+            ctx.stroke()
+
+            // 2.3 腿
+            ctx.beginPath()
+            ctx.moveTo(350, 170)
+            ctx.lineTo(300, 250)
+            ctx.lineWidth = 1
+            ctx.strokeStyle = 'red'
+            ctx.stroke()
+
+            ctx.beginPath()
+            ctx.moveTo(350, 170)
+            ctx.lineTo(450, 220)
+            ctx.strokeStyle = 'red'
+            ctx.stroke()
+        }())
+    </script>
+</body>
+</html>

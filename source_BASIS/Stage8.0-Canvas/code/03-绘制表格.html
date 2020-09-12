@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <canvas id="cavsElem">
+
+    </canvas>
+<script>
+    (function () {
+        var canvas = document.querySelector('#cavsElem')
+        var ctx = canvas.getContext('2d')
+
+        canvas.width = 600
+        canvas.height = 600
+        canvas.style.border = '1px solid #000'
+
+        var rectH = 20
+        var rectW = 20
+        ctx.lineWidth = 0.5
+        for (var i=0; i < canvas.width/rectH; i++){
+            // 1.绘制横线
+            ctx.moveTo(0, i * rectH)
+            ctx.lineTo(canvas.width, i * rectH)
+
+            // 2.绘制竖线
+            ctx.moveTo(i * rectW, 0)
+            ctx.lineTo(i * rectW, canvas.height)
+        }
+        // ctx.beginPath()
+        // ctx.closePath()
+        ctx.stroke()
+    }())
+
+</script>
+
+</body>
+</html>
