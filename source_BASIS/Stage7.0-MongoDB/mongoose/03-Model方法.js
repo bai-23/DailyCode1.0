@@ -15,7 +15,8 @@ var stuScheme = new Schema({
 })
 var StuModel = mongoose.model('student', stuScheme)
 
-StuModel.create([
+// 插入
+/*StuModel.create([
     {
     name: "猪八戒",
     age: 18,
@@ -29,9 +30,27 @@ StuModel.create([
 }], function(err){
     if (!err){
         console.log('插入成功~~')
-        console.log(arguments)
+        // console.log(arguments)
+    }
+})*/
+//  查询
+/*StuModel.find({name:"猪八戒"}, function(err, docs){
+    if (!err){
+        console.log(docs[0])
+    }
+})*/
+/*StuModel.find({}, "name age -_id", {skip:3, limit:1}, function (err, docs){
+    if (!err){
+        // console.log(docs)
+        console.log(docs instanceof StuModel)
+    }
+})*/
+// 改
+StuModel.updateOne({name:"孙悟空"}, {$set: {age: 20}, }, function (err){
+    if (!err){
+        console.log('修改成功')
     }
 })
-
-
+// 删
+// ...
 
